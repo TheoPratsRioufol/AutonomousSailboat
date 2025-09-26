@@ -1,0 +1,291 @@
+<FluentXMLReport>
+<version>
+Fluent
+Version: 3d, pbns, dynamesh, vof, sstkw, transient (3d, pressure-based, dynamic mesh, VOF, SST k-omega, transient)
+Release: 25.1.0
+Title: 
+</version>
+
+<Models>
+
+Models
+------
+
+   Model                        Settings                       
+   ---------------------------------------------------------
+   Space                        3D                             
+   Time                         Unsteady, 1st-Order Implicit   
+   Viscous                      SST k-omega turbulence model   
+   Heat Transfer                Disabled                       
+   Solidification and Melting   Disabled                       
+   Species                      Disabled                       
+   Coupled Dispersed Phase      Disabled                       
+   NOx Pollutants               Disabled                       
+   SOx Pollutants               Disabled                       
+   Soot                         Disabled                       
+   Mercury Pollutants           Disabled                       
+   Structure                    Disabled                       
+   Acoustics                    Disabled                       
+   Eulerian Wall Film           Disabled                       
+   Potential/Electrochemistry   Disabled                       
+   Multiphase                   Volume of Fluid                
+
+</Models>
+
+<MaterialProperties>
+Material Properties
+-------------------
+
+   Material: water-liquid (fluid)
+
+      Property    Units      Method     Value(s)   
+      ------------------------------------------
+      Density     kg/m^3     constant   998.2      
+      Viscosity   kg/(m s)   constant   0.001003   
+
+   Material: air (fluid)
+
+      Property    Units      Method     Value(s)     
+      --------------------------------------------
+      Density     kg/m^3     constant   1.225        
+      Viscosity   kg/(m s)   constant   1.7894e-05   
+
+   Material: aluminum (solid)
+
+      Property   Units    Method     Value(s)   
+      ---------------------------------------
+      Density    kg/m^3   constant   2719       
+
+</MaterialProperties>
+
+<CellZoneConditions>
+Cell Zone Conditions
+--------------------
+
+   Zones
+
+      name                       id   type    material       
+      ----------------------------------------------------
+      interior-fluid (mixture)   4    fluid   water-liquid   
+      interior-fluid (phase-1)   4    fluid   air            
+      interior-fluid (phase-2)   4    fluid   water-liquid   
+
+   Setup Conditions
+
+      interior-fluid (mixture)
+
+         Condition       Value   
+         ---------------------
+         Frame Motion?   no      
+         Mesh Motion?    no      
+
+      interior-fluid (phase-1)
+
+         Condition   Value   
+         -----------------
+
+      interior-fluid (phase-2)
+
+         Condition   Value   
+         -----------------
+
+</CellZoneConditions>
+
+<BoundaryConditions>
+Boundary Conditions
+-------------------
+
+   Zones
+
+      name                            id   type              
+      ----------------------------------------------------
+      inlet (mixture)                 7    pressure-inlet    
+      inlet (phase-1)                 7    pressure-inlet    
+      inlet (phase-2)                 7    pressure-inlet    
+      wall-interior-fluid (mixture)   5    wall              
+      wall-interior-fluid (phase-1)   5    wall              
+      wall-interior-fluid (phase-2)   5    wall              
+      symmetry (mixture)              6    symmetry          
+      symmetry (phase-1)              6    symmetry          
+      symmetry (phase-2)              6    symmetry          
+      outlet (mixture)                8    pressure-outlet   
+      outlet (phase-1)                8    pressure-outlet   
+      outlet (phase-2)                8    pressure-outlet   
+      boat (mixture)                  9    wall              
+      boat (phase-1)                  9    wall              
+      boat (phase-2)                  9    wall              
+
+   Setup Conditions
+
+      inlet (mixture)
+
+         Condition                  Value   
+         --------------------------------
+         Open Channel               yes     
+         Velocity Magnitude [m/s]   2       
+         Bottom Level [m]           -2      
+         Turbulent Intensity [%]    1       
+
+      inlet (phase-1)
+
+         Condition   Value   
+         -----------------
+
+      inlet (phase-2)
+
+         Condition   Value   
+         -----------------
+
+      wall-interior-fluid (mixture)
+
+         Condition                  Value             
+         ------------------------------------------
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     Standard          
+
+      wall-interior-fluid (phase-1)
+
+         Condition   Value   
+         -----------------
+
+      wall-interior-fluid (phase-2)
+
+         Condition   Value   
+         -----------------
+
+      symmetry (mixture)
+
+         Condition   Value   
+         -----------------
+
+      symmetry (phase-1)
+
+         Condition   Value   
+         -----------------
+
+      symmetry (phase-2)
+
+         Condition   Value   
+         -----------------
+
+      outlet (mixture)
+
+         Condition                          Value   
+         ----------------------------------------
+         Open Channel                       yes     
+         Bottom Level [m]                   -2      
+         Backflow Turbulent Intensity [%]   1       
+
+      outlet (phase-1)
+
+         Condition   Value   
+         -----------------
+
+      outlet (phase-2)
+
+         Condition   Value   
+         -----------------
+
+      boat (mixture)
+
+         Condition                  Value             
+         ------------------------------------------
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     Standard          
+
+      boat (phase-1)
+
+         Condition   Value   
+         -----------------
+
+      boat (phase-2)
+
+         Condition   Value   
+         -----------------
+
+</BoundaryConditions>
+
+<SolverSettings>
+Solver Settings
+---------------
+
+   Equations
+
+      Equation          Solved   
+      ------------------------
+      Flow              yes      
+      Volume Fraction   yes      
+      Turbulence        yes      
+
+   Numerics
+
+      Numeric                         Enabled   
+      ---------------------------------------
+      Absolute Velocity Formulation   yes       
+
+   Unsteady Calculation Parameters
+
+                                                
+      ---------------------------------------
+      Number of Time Steps       1              
+      Time Step Size [s]         0.0043059937   
+      Max Iterations/Time Step   100            
+
+   Under-Relaxation Factors
+
+      Variable                    Relaxation Factor   
+      ---------------------------------------------
+      Pressure                    0.3                 
+      Density                     1                   
+      Body Forces                 1                   
+      Momentum                    0.7                 
+      Volume Fraction             0.5                 
+      Turbulent Kinetic Energy    0.8                 
+      Specific Dissipation Rate   0.8                 
+      Turbulent Viscosity         1                   
+
+   Linear Solver
+
+      Variable                    Solver Type   Termination Criterion   Residual Reduction Tolerance   
+      ----------------------------------------------------------------------------------------------
+      Pressure                    V-Cycle       0.1                                                    
+      X-Momentum                  Flexible      0.1                     0.7                            
+      Y-Momentum                  Flexible      0.1                     0.7                            
+      Z-Momentum                  Flexible      0.1                     0.7                            
+      Volume Fraction             Flexible      0.1                     0.7                            
+      Turbulent Kinetic Energy    Flexible      0.1                     0.7                            
+      Specific Dissipation Rate   Flexible      0.1                     0.7                            
+
+   Pressure-Velocity Coupling
+
+      Parameter   Value    
+      ------------------
+      Type        SIMPLE   
+
+   Discretization Scheme
+
+      Variable                    Scheme                
+      -----------------------------------------------
+      Pressure                    PRESTO!               
+      Momentum                    Second Order Upwind   
+      Volume Fraction             Compressive           
+      Turbulent Kinetic Energy    Second Order Upwind   
+      Specific Dissipation Rate   Second Order Upwind   
+
+   Solution Limits
+
+      Quantity                                 Limit    
+      -----------------------------------------------
+      Minimum Absolute Pressure [Pa]           1        
+      Maximum Absolute Pressure [Pa]           5e+10    
+      Minimum Static Temperature [K]           1        
+      Maximum Static Temperature [K]           5000     
+      Minimum Turb. Kinetic Energy [m^2/s^2]   1e-14    
+      Minimum Spec. Dissipation Rate [s^-1]    1e-20    
+      Maximum Turb. Viscosity Ratio            100000   
+
+</SolverSettings>
+
+</FluentXMLReport>

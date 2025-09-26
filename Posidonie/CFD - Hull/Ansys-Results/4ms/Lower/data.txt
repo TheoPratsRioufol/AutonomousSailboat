@@ -1,0 +1,4 @@
+drag: 90.4 - 91.7 N
+lift: 281.8 (18s) - 295.8 N @ 22s
+h water = -0.25
+u water = 4 m/s

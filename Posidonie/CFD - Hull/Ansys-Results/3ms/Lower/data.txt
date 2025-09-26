@@ -1,0 +1,9 @@
+lift: 73.9 - 75.1 N
+drag: 66.7 - 68.5 N
+h water = -0.015
+u water = 3 m/s
+
+drag: 73.9 - 75.1 N
+lift: 366.7 - 368.5 N
+h water = -0.015
+u water = 3 m/s

@@ -1,0 +1,7 @@
+# Fluent dynamic mesh motion history
+# 
+#                      Location (meters)             Orientation (degrees)
+#    time        CG_X         CG_Y         CG_Z     THETA_X THETA_Y THETA_Z
+# 
+ 0.00000e+00 -2.00000e-01  0.00000e+00 -1.07100e+00  0.00000e+00  0.00000e+00  0.00000e+00
+ 2.00000e-01 -2.00000e-01  0.00000e+00 -1.72827e+00  0.00000e+00  0.00000e+00  0.00000e+00
