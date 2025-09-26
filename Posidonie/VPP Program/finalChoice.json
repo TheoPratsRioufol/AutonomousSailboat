@@ -1,0 +1,1634 @@
+{
+    "geomEditor": {
+        "geom": {
+            "sail": {
+                "ls": {
+                    "value": 0.35,
+                    "unit": "m",
+                    "info": "Width of the sail"
+                },
+                "hms": {
+                    "value": 0.0,
+                    "unit": "m",
+                    "info": "Height of the sail mechanism (on the bottom)"
+                },
+                "he": {
+                    "value": 0.7,
+                    "unit": "m",
+                    "info": "Height of the slidable sail section"
+                },
+                "ds": {
+                    "value": 0.1,
+                    "unit": "m",
+                    "info": "Vertical gap betwen the hull and the sail"
+                },
+                "epsi": {
+                    "value": 25.0,
+                    "unit": "%",
+                    "info": "Relative longitudinal position of the aerodynamic center of effort"
+                },
+                "alpha": {
+                    "value": 45.0,
+                    "unit": "%",
+                    "info": "Relative longitudinal position (1=aft)"
+                },
+                "lambda": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "info": "Extension of the sail (1=full sail)"
+                },
+                "profile": {
+                    "value": "NACA0015",
+                    "unit": "-",
+                    "info": "NACA Profile of the sail"
+                }
+            },
+            "drift": {
+                "ld": {
+                    "value": 0.14,
+                    "unit": "m",
+                    "info": "Width of the drift"
+                },
+                "hd": {
+                    "value": 0.9,
+                    "unit": "m",
+                    "info": "Heigth of the drift"
+                },
+                "gd": {
+                    "value": 30.0,
+                    "unit": "deg",
+                    "info": "Slope angle of the drift"
+                },
+                "ed": {
+                    "value": 0.025,
+                    "unit": "m",
+                    "info": "Tickness of the drift"
+                },
+                "mLest": {
+                    "value": 25.0,
+                    "unit": "kg",
+                    "info": "Weight of the keel bulb"
+                },
+                "alpha": {
+                    "value": 30.0,
+                    "unit": "%",
+                    "info": "Relative longitudinal position (1=aft)"
+                },
+                "profile": {
+                    "value": "NACA0015",
+                    "unit": "-",
+                    "info": "NACA Profile of the sail"
+                },
+                "Ld": {
+                    "value": 0.15,
+                    "unit": "m",
+                    "info": "Drift Base extension"
+                },
+                "epsi": {
+                    "value": 25.0,
+                    "unit": "%",
+                    "info": "Relative longitudinal position of the aerodynamic center of effort"
+                }
+            },
+            "rudder": {
+                "lr": {
+                    "value": 0.15,
+                    "unit": "m",
+                    "info": "Width of the rudder"
+                },
+                "hr": {
+                    "value": 0.4,
+                    "unit": "m",
+                    "info": "Height of the rudder"
+                },
+                "er": {
+                    "value": 0.019,
+                    "unit": "m",
+                    "info": "Tickness of the rudder"
+                },
+                "lrp": {
+                    "value": 0.2,
+                    "unit": "m",
+                    "info": "Longitudinal length of the protect rudder plate"
+                },
+                "epsi": {
+                    "value": 25.0,
+                    "unit": "%",
+                    "info": "Relative longitudinal position of the hydrodynamic center of effort"
+                },
+                "alpha": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "info": "Relative longitudinal position (1=aft)"
+                },
+                "rProfile": {
+                    "value": "NACA0015",
+                    "unit": "-",
+                    "info": "NACA Profile of the sail"
+                },
+                "prProfile": {
+                    "value": "NACA0015",
+                    "unit": "-",
+                    "info": "NACA Profile of the sail"
+                }
+            },
+            "solver": {
+                "maxRudderAng": {
+                    "value": 25.0,
+                    "unit": "deg",
+                    "info": "Maximum rudder angle"
+                }
+            },
+            "navigator": {
+                "k": {
+                    "value": 1.0,
+                    "unit": "-",
+                    "info": "Proportional coeefficient of the PID"
+                },
+                "ki": {
+                    "value": 0.1,
+                    "unit": "-",
+                    "info": "Integral coeefficient of the PID"
+                },
+                "i": {
+                    "value": 15.0,
+                    "unit": "deg",
+                    "info": "Target sail incidence angle upwind"
+                },
+                "on": {
+                    "value": 1.0,
+                    "unit": "-",
+                    "info": "Set to 0 to turn off the navigator"
+                },
+                "tau": {
+                    "value": 1.0,
+                    "unit": "s",
+                    "info": "Caracteristic time of the sail controller"
+                }
+            }
+        }
+    },
+    "navController": {
+        "editors": {
+            "target": {
+                "gui": [
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "0"
+                    },
+                    {
+                        "type": "Convergence",
+                        "duration": "3.0",
+                        "value": "2.0"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "0.0"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.0) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(3.0543261909900767, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "0.0"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "5.416666666666667"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.09453866781635953) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.959787523173717, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "5.416666666666667"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "10.833333333333334"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.18907733563271906) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.8652488553573576, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "10.833333333333334"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "16.25"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.28361600344907856) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.770710187540998, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "16.25"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "21.666666666666668"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.3781546712654381) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.676171519724639, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "21.666666666666668"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "27.083333333333336"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.4726933390817976) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.581632851908279, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "27.083333333333336"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "32.5"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.5672320068981571) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.4870941840919194, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "32.5"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "37.91666666666667"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.6617706747145167) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.39255551627556, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "37.91666666666667"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "43.333333333333336"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.7563093425308762) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.2980168484592003, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "43.333333333333336"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "48.75"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.8508480103472357) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.203478180642841, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "48.75"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "54.16666666666667"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-0.9453866781635952) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.1089395128264816, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "54.16666666666667"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "59.583333333333336"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.0399253459799547) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(2.014400845010122, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "59.583333333333336"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "65.0"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.1344640137963142) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.9198621771937625, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "65.0"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "70.41666666666667"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.2290026816126738) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.825323509377403, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "70.41666666666667"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "75.83333333333334"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.3235413494290333) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.7307848415610434, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "75.83333333333334"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "81.25"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.4180800172453927) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.6362461737446838, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "81.25"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "86.66666666666667"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.5126186850617525) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.5417075059283243, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "86.66666666666667"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "92.08333333333334"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.607157352878112) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.4471688381119647, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "92.08333333333334"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "97.5"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.7016960206944713) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.3526301702956054, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "97.5"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "102.91666666666667"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.796234688510831) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.2580915024792458, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "102.91666666666667"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "108.33333333333334"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.8907733563271905) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.1635528346628863, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "108.33333333333334"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "113.75"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-1.9853120241435498) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(1.069014166846527, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "113.75"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "119.16666666666667"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-2.0798506919599093) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(0.9744754990301673, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "119.16666666666667"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "124.58333333333334"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-2.174389359776269) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(0.8799368312138076, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "124.58333333333334"
+                    },
+                    {
+                        "type": "Slope",
+                        "duration": "4.0",
+                        "value": "130.0"
+                    },
+                    {
+                        "type": "Execute",
+                        "duration": "1",
+                        "value": "if abs(X.getTrueHeading()-2.2689280275926285) > 0.08726646259971647:\n    print('THE HEADING DID NOT CONVERGE!')\nelif app != None:\n    app.getPolarGenerator().plot(0.7853981633974483, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n"
+                    },
+                    {
+                        "type": "Constant",
+                        "duration": "0.01",
+                        "value": "130.0"
+                    }
+                ],
+                "fct": {
+                    "str": "import numpy as np\ndef signal(app, X, S, t):\n    if S['step'] == 0:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0.0\n        out = 0.0\n        \n    if S['step'] == 1:\n\n        if (np.abs(X.getTrueHeading() - S['lastSteadyHeading']) > 0.03490658503988659):\n           S['lastSteadyHeading'] = X.getTrueHeading()\n           S['lastSteadyTime'] = t\n        if (np.linalg.norm(X.get('ang') - S['lastSteadyAng']) > 0.03490658503988659):\n           S['lastSteadyAng'] = X.get('ang').copy()\n           S['lastSteadyTime'] = t\n        if t - S['lastSteadyTime'] > 3.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 2.0\n        out = S['y0']\n        \n    if S['step'] == 2:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0.0\n        out = S['y0'] + (t - S['t0'])*(0.0 - S['y0'])/4.0\n        \n    if S['step'] == 3:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.0) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(3.0543261909900767, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 4:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0.0\n        out = 0.0\n        \n    if S['step'] == 5:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 5.416666666666667\n        out = S['y0'] + (t - S['t0'])*(5.416666666666667 - S['y0'])/4.0\n        \n    if S['step'] == 6:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.09453866781635953) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.959787523173717, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 7:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 5.416666666666667\n        out = 5.416666666666667\n        \n    if S['step'] == 8:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 10.833333333333334\n        out = S['y0'] + (t - S['t0'])*(10.833333333333334 - S['y0'])/4.0\n        \n    if S['step'] == 9:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.18907733563271906) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.8652488553573576, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 10:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 10.833333333333334\n        out = 10.833333333333334\n        \n    if S['step'] == 11:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 16.25\n        out = S['y0'] + (t - S['t0'])*(16.25 - S['y0'])/4.0\n        \n    if S['step'] == 12:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.28361600344907856) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.770710187540998, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 13:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 16.25\n        out = 16.25\n        \n    if S['step'] == 14:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 21.666666666666668\n        out = S['y0'] + (t - S['t0'])*(21.666666666666668 - S['y0'])/4.0\n        \n    if S['step'] == 15:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.3781546712654381) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.676171519724639, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 16:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 21.666666666666668\n        out = 21.666666666666668\n        \n    if S['step'] == 17:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 27.083333333333336\n        out = S['y0'] + (t - S['t0'])*(27.083333333333336 - S['y0'])/4.0\n        \n    if S['step'] == 18:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.4726933390817976) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.581632851908279, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 19:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 27.083333333333336\n        out = 27.083333333333336\n        \n    if S['step'] == 20:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 32.5\n        out = S['y0'] + (t - S['t0'])*(32.5 - S['y0'])/4.0\n        \n    if S['step'] == 21:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.5672320068981571) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.4870941840919194, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 22:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 32.5\n        out = 32.5\n        \n    if S['step'] == 23:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 37.91666666666667\n        out = S['y0'] + (t - S['t0'])*(37.91666666666667 - S['y0'])/4.0\n        \n    if S['step'] == 24:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.6617706747145167) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.39255551627556, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 25:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 37.91666666666667\n        out = 37.91666666666667\n        \n    if S['step'] == 26:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 43.333333333333336\n        out = S['y0'] + (t - S['t0'])*(43.333333333333336 - S['y0'])/4.0\n        \n    if S['step'] == 27:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.7563093425308762) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.2980168484592003, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 28:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 43.333333333333336\n        out = 43.333333333333336\n        \n    if S['step'] == 29:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 48.75\n        out = S['y0'] + (t - S['t0'])*(48.75 - S['y0'])/4.0\n        \n    if S['step'] == 30:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.8508480103472357) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.203478180642841, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 31:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 48.75\n        out = 48.75\n        \n    if S['step'] == 32:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 54.16666666666667\n        out = S['y0'] + (t - S['t0'])*(54.16666666666667 - S['y0'])/4.0\n        \n    if S['step'] == 33:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-0.9453866781635952) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.1089395128264816, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 34:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 54.16666666666667\n        out = 54.16666666666667\n        \n    if S['step'] == 35:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 59.583333333333336\n        out = S['y0'] + (t - S['t0'])*(59.583333333333336 - S['y0'])/4.0\n        \n    if S['step'] == 36:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.0399253459799547) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(2.014400845010122, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 37:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 59.583333333333336\n        out = 59.583333333333336\n        \n    if S['step'] == 38:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 65.0\n        out = S['y0'] + (t - S['t0'])*(65.0 - S['y0'])/4.0\n        \n    if S['step'] == 39:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.1344640137963142) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.9198621771937625, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 40:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 65.0\n        out = 65.0\n        \n    if S['step'] == 41:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 70.41666666666667\n        out = S['y0'] + (t - S['t0'])*(70.41666666666667 - S['y0'])/4.0\n        \n    if S['step'] == 42:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.2290026816126738) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.825323509377403, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 43:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 70.41666666666667\n        out = 70.41666666666667\n        \n    if S['step'] == 44:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 75.83333333333334\n        out = S['y0'] + (t - S['t0'])*(75.83333333333334 - S['y0'])/4.0\n        \n    if S['step'] == 45:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.3235413494290333) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.7307848415610434, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 46:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 75.83333333333334\n        out = 75.83333333333334\n        \n    if S['step'] == 47:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 81.25\n        out = S['y0'] + (t - S['t0'])*(81.25 - S['y0'])/4.0\n        \n    if S['step'] == 48:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.4180800172453927) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.6362461737446838, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 49:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 81.25\n        out = 81.25\n        \n    if S['step'] == 50:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 86.66666666666667\n        out = S['y0'] + (t - S['t0'])*(86.66666666666667 - S['y0'])/4.0\n        \n    if S['step'] == 51:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.5126186850617525) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.5417075059283243, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 52:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 86.66666666666667\n        out = 86.66666666666667\n        \n    if S['step'] == 53:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 92.08333333333334\n        out = S['y0'] + (t - S['t0'])*(92.08333333333334 - S['y0'])/4.0\n        \n    if S['step'] == 54:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.607157352878112) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.4471688381119647, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 55:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 92.08333333333334\n        out = 92.08333333333334\n        \n    if S['step'] == 56:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 97.5\n        out = S['y0'] + (t - S['t0'])*(97.5 - S['y0'])/4.0\n        \n    if S['step'] == 57:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.7016960206944713) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.3526301702956054, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 58:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 97.5\n        out = 97.5\n        \n    if S['step'] == 59:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 102.91666666666667\n        out = S['y0'] + (t - S['t0'])*(102.91666666666667 - S['y0'])/4.0\n        \n    if S['step'] == 60:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.796234688510831) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.2580915024792458, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 61:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 102.91666666666667\n        out = 102.91666666666667\n        \n    if S['step'] == 62:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 108.33333333333334\n        out = S['y0'] + (t - S['t0'])*(108.33333333333334 - S['y0'])/4.0\n        \n    if S['step'] == 63:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.8907733563271905) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.1635528346628863, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 64:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 108.33333333333334\n        out = 108.33333333333334\n        \n    if S['step'] == 65:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 113.75\n        out = S['y0'] + (t - S['t0'])*(113.75 - S['y0'])/4.0\n        \n    if S['step'] == 66:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-1.9853120241435498) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(1.069014166846527, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 67:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 113.75\n        out = 113.75\n        \n    if S['step'] == 68:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 119.16666666666667\n        out = S['y0'] + (t - S['t0'])*(119.16666666666667 - S['y0'])/4.0\n        \n    if S['step'] == 69:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-2.0798506919599093) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(0.9744754990301673, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 70:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 119.16666666666667\n        out = 119.16666666666667\n        \n    if S['step'] == 71:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 124.58333333333334\n        out = S['y0'] + (t - S['t0'])*(124.58333333333334 - S['y0'])/4.0\n        \n    if S['step'] == 72:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-2.174389359776269) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(0.8799368312138076, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 73:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 124.58333333333334\n        out = 124.58333333333334\n        \n    if S['step'] == 74:\n\n        \n        if t - S['t0'] > 4.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 130.0\n        out = S['y0'] + (t - S['t0'])*(130.0 - S['y0'])/4.0\n        \n    if S['step'] == 75:\n\n        \n        if True:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 0\n        out = S['y0']\n        if abs(X.getTrueHeading()-2.2689280275926285) > 0.08726646259971647:\n            print('THE HEADING DID NOT CONVERGE!')\n        elif app != None:\n            app.getPolarGenerator().plot(0.7853981633974483, X.getBoatSpeedNorm(), X.getBoatRoll(), X.getBoatPitch())\n        \n    if S['step'] == 76:\n\n        \n        if t - S['t0'] > 0.01:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 130.0\n        out = 130.0\n        \n    if S['step'] >= 77:\n        out = S['y0']\n    return out, S\n",
+                    "tf": 128.26000000000005
+                }
+            },
+            "wang": {
+                "gui": [
+                    {
+                        "type": "Constant",
+                        "duration": "1",
+                        "value": "175"
+                    }
+                ],
+                "fct": {
+                    "str": "import numpy as np\ndef signal(app, X, S, t):\n    if S['step'] == 0:\n\n        \n        if t - S['t0'] > 1.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 175.0\n        out = 175.0\n        \n    if S['step'] >= 1:\n        out = S['y0']\n    return out, S\n",
+                    "tf": 1.0
+                }
+            },
+            "wspeed": {
+                "gui": [
+                    {
+                        "type": "Constant",
+                        "duration": "1",
+                        "value": "15.0"
+                    }
+                ],
+                "fct": {
+                    "str": "import numpy as np\ndef signal(app, X, S, t):\n    if S['step'] == 0:\n\n        \n        if t - S['t0'] > 1.0:\n            S['step'] += 1\n            S['t0'] = t\n            S['y0'] = 15.0\n        out = 15.0\n        \n    if S['step'] >= 1:\n        out = S['y0']\n    return out, S\n",
+                    "tf": 1.0
+                }
+            }
+        },
+        "selected": "wspeed",
+        "manual": {
+            "target": "15",
+            "wang": "45",
+            "wspeed": "25"
+        },
+        "startFromCurrentTime": 1
+    },
+    "polarGenerator": {
+        "windSpeed": "15",
+        "nbHeading": "25",
+        "steadyTime": "3",
+        "steadyAng": "2",
+        "strategy": "Slope",
+        "targetError": "5",
+        "traces": [
+            {
+                "wspeed": 25.0,
+                "angs": [
+                    3.0543261909900767,
+                    2.959787523173717,
+                    2.8652488553573576,
+                    2.770710187540998,
+                    2.676171519724639,
+                    2.581632851908279,
+                    2.4870941840919194,
+                    2.39255551627556,
+                    2.2980168484592003,
+                    2.203478180642841,
+                    2.1089395128264816,
+                    2.014400845010122,
+                    1.9198621771937625,
+                    1.825323509377403,
+                    1.7307848415610434,
+                    1.6362461737446838,
+                    1.5417075059283243,
+                    1.4471688381119647,
+                    1.3526301702956054,
+                    1.2580915024792458,
+                    1.1635528346628863,
+                    1.069014166846527,
+                    0.9744754990301673,
+                    0.8799368312138076
+                ],
+                "speeds": [
+                    1.1581438936463055,
+                    1.1329398369673214,
+                    1.1731266426804834,
+                    1.2566863210467412,
+                    1.3583227039228933,
+                    1.4568123481867477,
+                    1.5494077156321593,
+                    1.6380493663330378,
+                    1.7180058317543916,
+                    1.7937750149096543,
+                    1.7152220875199573,
+                    1.6759532361910692,
+                    1.691701635441421,
+                    1.7021267833644067,
+                    1.7082690430185499,
+                    1.7093719924722308,
+                    1.7036553226297697,
+                    1.6903315259852867,
+                    1.669170705348696,
+                    1.6398177040682655,
+                    1.6024968524223313,
+                    1.5572555586401418,
+                    1.5050455949407513,
+                    1.45640576710403
+                ],
+                "rolls": [
+                    0.26623710441632004,
+                    0.25143668582133333,
+                    0.24788409280806417,
+                    0.23776020902494363,
+                    0.22484990483869247,
+                    0.20985756592428817,
+                    0.19327084157917188,
+                    0.1753259853776987,
+                    0.15548146888753284,
+                    0.13384625538877373,
+                    0.10825745799304419,
+                    0.08453206448971395,
+                    0.0548390066125154,
+                    0.022755052401298263,
+                    0.010240207963225867,
+                    0.04302759339557181,
+                    0.0761856432338943,
+                    0.10931545178486159,
+                    0.13986097077985926,
+                    0.1678307955449179,
+                    0.19569775028781533,
+                    0.22446853595089283,
+                    0.25482824260594855,
+                    0.17561499652086188
+                ],
+                "pitchs": [
+                    0.007475655611512086,
+                    0.006173608370018511,
+                    0.003270931337777843,
+                    -0.0005260150874828454,
+                    -0.005028035061841866,
+                    -0.009832296627449834,
+                    -0.0145595071349432,
+                    -0.01926939654063496,
+                    -0.02435927408442777,
+                    -0.029431824123978826,
+                    -0.03414183707792574,
+                    -0.036800279929925094,
+                    -0.04029227739506002,
+                    -0.043191661082307535,
+                    -0.0448644046064671,
+                    -0.04462238514871997,
+                    -0.04378104024664197,
+                    -0.04257477815891419,
+                    -0.04075492566130559,
+                    -0.038387279454782534,
+                    -0.03569162617136909,
+                    -0.03284240852592195,
+                    -0.03149426877906167,
+                    -0.03719655964429593
+                ],
+                "setup": {
+                    "windSpeed": "25",
+                    "nbHeading": "25",
+                    "steadyTime": "3",
+                    "steadyAng": "2",
+                    "strategy": "Slope",
+                    "targetError": "5"
+                },
+                "geomStamp": 1462611058
+            },
+            {
+                "wspeed": 15.0,
+                "angs": [
+                    3.0543261909900767,
+                    2.959787523173717,
+                    2.8652488553573576,
+                    2.770710187540998,
+                    2.676171519724639,
+                    2.581632851908279,
+                    2.4870941840919194,
+                    2.39255551627556,
+                    2.2980168484592003,
+                    2.203478180642841,
+                    2.1089395128264816,
+                    2.014400845010122,
+                    1.9198621771937625,
+                    1.825323509377403,
+                    1.7307848415610434,
+                    1.6362461737446838,
+                    1.5417075059283243,
+                    1.4471688381119647,
+                    1.3526301702956054,
+                    1.2580915024792458,
+                    1.1635528346628863,
+                    1.069014166846527,
+                    0.9744754990301673,
+                    0.8799368312138076
+                ],
+                "speeds": [
+                    0.6666108547044428,
+                    0.6650032301770051,
+                    0.6823994541302302,
+                    0.7240755276628092,
+                    0.779661097328937,
+                    0.84150805577601,
+                    0.902338011263942,
+                    0.9566465537660991,
+                    1.0055490376209566,
+                    1.006046332235503,
+                    0.9813890522876872,
+                    0.9889909198050694,
+                    1.0012497959455637,
+                    1.0088596599333277,
+                    1.0135760821503734,
+                    1.0156635977648152,
+                    1.0144724876822886,
+                    1.009499737506154,
+                    1.000076981218628,
+                    0.9859878866694824,
+                    0.9671050299841634,
+                    0.9433078191039075,
+                    0.9146699174081733,
+                    0.8819502157736582
+                ],
+                "rolls": [
+                    0.13665970925329113,
+                    0.13137025014489195,
+                    0.13184530434078304,
+                    0.13095636012348058,
+                    0.128644458466273,
+                    0.12517989624848677,
+                    0.11876806958412787,
+                    0.11154801471915676,
+                    0.10293853099769504,
+                    0.09366534024814,
+                    0.08535425860877059,
+                    0.07383228158737706,
+                    0.06113753023083826,
+                    0.04742336701559545,
+                    0.03305099210978132,
+                    0.018086115520765923,
+                    0.0027640870700733422,
+                    0.013079033300998168,
+                    0.029089065550253798,
+                    0.04400819720926187,
+                    0.05566922170419315,
+                    0.06214298231521901,
+                    0.08547359526575608,
+                    0.2070752885765257
+                ],
+                "pitchs": [
+                    0.0097642958102768,
+                    0.008885422035722106,
+                    0.007485823564610399,
+                    0.0055776024439267435,
+                    0.00343774287409107,
+                    0.0012630272172120904,
+                    -0.0013927785061392992,
+                    -0.003926618050097158,
+                    -0.0064462181951344425,
+                    -0.009516085459779952,
+                    -0.011392839613136118,
+                    -0.014043269000619201,
+                    -0.016982552555429523,
+                    -0.019754914092791606,
+                    -0.02241063961790177,
+                    -0.024953498199951844,
+                    -0.027349465691137765,
+                    -0.027172318041590485,
+                    -0.026477680324249724,
+                    -0.025687524255223748,
+                    -0.02483917445990613,
+                    -0.023406017332277873,
+                    -0.018769404569136738,
+                    -0.005382346372975511
+                ],
+                "setup": {
+                    "windSpeed": "15",
+                    "nbHeading": "25",
+                    "steadyTime": "3",
+                    "steadyAng": "2",
+                    "strategy": "Slope",
+                    "targetError": "5"
+                },
+                "geomStamp": 1462611058
+            }
+        ]
+    },
+    "hullBuoyencyEditor": {
+        "stlpath": "C:/Users/alber/Downloads/HullV8.STL",
+        "longiDir": "+X",
+        "topBotDir": "-Z",
+        "roll": {
+            "max": 3.141592653589793,
+            "N": 26
+        },
+        "pitch": {
+            "max": 0.7853981633974483,
+            "min": -0.7853981633974483,
+            "N": 26
+        },
+        "Z": {
+            "N": 26
+        },
+        "mass": 62.22,
+        "length": 1.9,
+        "originalCdg": [
+            797.73,
+            405.63,
+            91.93
+        ],
+        "originalCor": [
+            797.73,
+            405.63,
+            91.93
+        ],
+        "inertia": [
+            [
+                72.85,
+                0.96,
+                -8.05
+            ],
+            [
+                0.96,
+                62.47,
+                -6.7
+            ],
+            [
+                -8.05,
+                -6.7,
+                16.02
+            ]
+        ],
+        "inertiaUnit": "kg*m^2",
+        "modelpath": "C:/Users/alber/Documents/GIT/Posidonie/backend/hull/posidonie.buoyModel",
+        "eqZ": "0.038432967307447996",
+        "eqPitch": "4.005122461236329",
+        "eqValid": false
+    },
+    "mxPlot": {
+        "wmin": "8",
+        "wmax": "45",
+        "tslope": "90",
+        "anglecv": "3",
+        "cvTime": "3",
+        "heading": "40.0",
+        "N": "30",
+        "mxFigure": {
+            "traces": [
+                {
+                    "wspeeds": [
+                        11.827586206896552,
+                        13.10344827586207,
+                        14.379310344827587,
+                        15.655172413793103,
+                        16.93103448275862,
+                        18.20689655172414,
+                        19.48275862068966,
+                        20.758620689655174,
+                        22.03448275862069,
+                        23.310344827586206,
+                        24.586206896551726,
+                        25.862068965517242,
+                        27.13793103448276,
+                        28.413793103448278,
+                        29.689655172413794,
+                        30.965517241379313,
+                        32.241379310344826,
+                        33.51724137931035,
+                        34.793103448275865,
+                        36.06896551724138,
+                        37.344827586206904,
+                        38.62068965517241,
+                        39.896551724137936,
+                        41.17241379310345,
+                        42.44827586206897,
+                        43.724137931034484,
+                        45.0
+                    ],
+                    "bspeeds": [
+                        0.5537607771229318,
+                        0.6318319262075551,
+                        0.7138596786851806,
+                        0.7992394219431836,
+                        0.8846633593831978,
+                        0.9700347603801446,
+                        1.0554126930955323,
+                        1.1407208013286678,
+                        1.2258333096140495,
+                        1.310672246468799,
+                        1.3952410621782934,
+                        1.479617671995661,
+                        1.563942994499183,
+                        1.6484156210166507,
+                        1.7332588581869781,
+                        1.8187218474826676,
+                        1.9008120453606459,
+                        1.9768725504111204,
+                        2.0510207791117905,
+                        2.1253108381359156,
+                        2.200404380796317,
+                        2.275401609653743,
+                        2.348268399744007,
+                        2.4233990688869267,
+                        2.504229253286275,
+                        2.594426343076848,
+                        2.684226014202242
+                    ],
+                    "rolls": [
+                        -0.10556950273892686,
+                        -0.11567154740395018,
+                        -0.12737699549036055,
+                        -0.1359835410479042,
+                        -0.14524871509017898,
+                        -0.15488549534187904,
+                        -0.16512605937158412,
+                        -0.17589820139915313,
+                        -0.18724053270509688,
+                        -0.1991469852675624,
+                        -0.21161115111430595,
+                        -0.22461912134943432,
+                        -0.23811295687435696,
+                        -0.25212974473800315,
+                        -0.27027054057401095,
+                        -0.28946825979973695,
+                        -0.30883018605262225,
+                        -0.32821359143633916,
+                        -0.3476556881335297,
+                        -0.3670343572640338,
+                        -0.38830892751376056,
+                        -0.4279354198698818,
+                        -0.4689026769538153,
+                        -0.5074428214972622,
+                        -0.5591069009623318,
+                        -0.6307043093364824,
+                        -0.7298166933433653
+                    ],
+                    "pitchs": [
+                        0.004064037602940153,
+                        0.0034633427374059092,
+                        0.0025159548568825015,
+                        0.0015962947475120703,
+                        0.0004839254495987812,
+                        -0.0007155080915769911,
+                        -0.0020202997463824998,
+                        -0.0034111684561924254,
+                        -0.00486823282013794,
+                        -0.006383666608307565,
+                        -0.00794953756898129,
+                        -0.009554435344074928,
+                        -0.011194729375090215,
+                        -0.012864550345707122,
+                        -0.014788256328029895,
+                        -0.017186317160217235,
+                        -0.019996207487989866,
+                        -0.022801737866058273,
+                        -0.025723891538469865,
+                        -0.028957099606455306,
+                        -0.03248136435961604,
+                        -0.03659248528213346,
+                        -0.041617612877794315,
+                        -0.04793059670361826,
+                        -0.055943074587054366,
+                        -0.06793955508569402,
+                        -0.0857230473090154
+                    ],
+                    "mxs": [
+                        0.13342444631629435,
+                        0.22247222129293093,
+                        0.12324195528393372,
+                        0.2044289491942349,
+                        0.19497541538096502,
+                        0.22890624859015998,
+                        0.24144867222470123,
+                        0.25495805498029267,
+                        0.26672926540744957,
+                        0.2768071920024528,
+                        0.28635942517480295,
+                        0.2928687640574576,
+                        0.3022574029301664,
+                        0.3460857082574333,
+                        0.4014753414599064,
+                        0.3922466657832941,
+                        0.40410091396529946,
+                        0.4025496821215289,
+                        0.4036191794254156,
+                        0.4013248503219346,
+                        0.9671165062328893,
+                        0.8015551692686302,
+                        0.746067323968552,
+                        0.9475006826026104,
+                        1.4661729572342599,
+                        1.6470429730111846,
+                        3.556381508572574
+                    ],
+                    "mys": [
+                        0.4585497609338288,
+                        0.6352518684930885,
+                        0.5541234269264889,
+                        0.6272845131382518,
+                        0.6023399521302657,
+                        0.6024855948014762,
+                        0.6009201826155702,
+                        0.5991771928251692,
+                        0.5986229621831548,
+                        0.5975783687802491,
+                        0.5970740841126351,
+                        0.5979021399947185,
+                        0.5981120459601499,
+                        0.6181111630048961,
+                        0.5940540160600389,
+                        0.5600215839610236,
+                        0.650508735095511,
+                        0.5256951199749667,
+                        0.5542412069289054,
+                        0.561763823535993,
+                        0.5849327629184755,
+                        0.5703819431294321,
+                        0.5891619307053118,
+                        0.607172588529303,
+                        0.7299809148016491,
+                        0.8818907829842206,
+                        1.471458176977839
+                    ],
+                    "heading": 2.6179938779914944,
+                    "geomStamp": 1462611058
+                },
+                {
+                    "wspeeds": [
+                        10.551724137931036,
+                        11.827586206896552,
+                        13.10344827586207,
+                        14.379310344827587,
+                        15.655172413793103,
+                        16.93103448275862,
+                        18.20689655172414,
+                        19.48275862068966,
+                        20.758620689655174,
+                        22.03448275862069,
+                        23.310344827586206,
+                        24.586206896551726,
+                        25.862068965517242,
+                        27.13793103448276,
+                        28.413793103448278,
+                        29.689655172413794,
+                        30.965517241379313,
+                        32.241379310344826,
+                        33.51724137931035,
+                        34.793103448275865,
+                        36.06896551724138,
+                        37.344827586206904,
+                        38.62068965517241,
+                        39.896551724137936,
+                        41.17241379310345,
+                        42.44827586206897,
+                        43.724137931034484,
+                        45.0
+                    ],
+                    "bspeeds": [
+                        0.5828137768989176,
+                        0.6886137742860564,
+                        0.8061204043345969,
+                        0.9322342438343447,
+                        1.0645391522039438,
+                        1.1939484934744378,
+                        1.3185176198765778,
+                        1.4017985975053924,
+                        1.4523688705395505,
+                        1.4795491714680749,
+                        1.5445968867390918,
+                        1.6748329933592234,
+                        1.8719087621258312,
+                        2.0190790401070915,
+                        2.0429191451540607,
+                        2.0229454639941222,
+                        2.0958182680132214,
+                        2.171118931563423,
+                        2.3499102657261797,
+                        2.4996059188167767,
+                        2.5559663783393227,
+                        2.548280480778676,
+                        2.615020688082139,
+                        2.7258404049346336,
+                        2.8645385718263285,
+                        2.9958254766311985,
+                        3.1454678810856542,
+                        3.2141986395004154
+                    ],
+                    "rolls": [
+                        -0.07429489658908582,
+                        -0.07543383826701977,
+                        -0.07590916522740804,
+                        -0.07586483423593111,
+                        -0.0749879241869056,
+                        -0.07445939080679599,
+                        -0.0738257894143207,
+                        -0.07297330094802904,
+                        -0.07286301977611652,
+                        -0.07372991900705576,
+                        -0.07498891892192693,
+                        -0.07576016202061289,
+                        -0.07480630542282439,
+                        -0.07226739042002092,
+                        -0.07092268043294452,
+                        -0.07289457647779174,
+                        -0.07495320481435645,
+                        -0.07686968662672769,
+                        -0.07671032333689859,
+                        -0.07407527961468274,
+                        -0.07263584645569568,
+                        -0.07392126106298423,
+                        -0.07686040108726609,
+                        -0.07754536446482514,
+                        -0.0768271812865719,
+                        -0.07526294482542004,
+                        -0.07391453378227793,
+                        -0.07326309166827959
+                    ],
+                    "pitchs": [
+                        -0.006350150115997323,
+                        -0.008308227918929594,
+                        -0.009875640214471973,
+                        -0.012091225173624568,
+                        -0.014985991104554125,
+                        -0.017825549574205204,
+                        -0.02072377251899876,
+                        -0.024818074479967447,
+                        -0.027586814360985753,
+                        -0.03206523765345774,
+                        -0.03407701303697143,
+                        -0.03581789827678851,
+                        -0.03886424877434857,
+                        -0.0420472655929477,
+                        -0.04543641329517694,
+                        -0.04817834672154208,
+                        -0.05108694327169054,
+                        -0.05431222859493835,
+                        -0.05811779802245288,
+                        -0.06160315662574827,
+                        -0.06547691525106396,
+                        -0.06886743701873899,
+                        -0.07264655553281284,
+                        -0.07652499653147747,
+                        -0.08038506336392744,
+                        -0.0816526585940965,
+                        -0.07999958649101842,
+                        -0.08623853396173703
+                    ],
+                    "mxs": [
+                        -0.05477100116817912,
+                        -0.08234625003432049,
+                        -0.0479566274898801,
+                        0.005591065776745247,
+                        0.008294274597054471,
+                        -0.012595638213843593,
+                        0.0030095599161231042,
+                        0.10679230454110199,
+                        -0.3079314280384245,
+                        0.27678019935695125,
+                        -0.0383367159878404,
+                        0.4610661960092429,
+                        -0.7761469297808591,
+                        0.7021630157198222,
+                        0.6571780863079881,
+                        -0.22072963159868478,
+                        -0.44019879881739477,
+                        -0.7455504366494334,
+                        1.1222832985860285,
+                        1.2983564271608037,
+                        1.685185327115091,
+                        1.0504964897315632,
+                        1.129588122636156,
+                        1.2517635857425813,
+                        1.0822610167466797,
+                        2.4520145541284717,
+                        2.5781981496451474,
+                        0.8822752633608091
+                    ],
+                    "mys": [
+                        1.0599718760611638,
+                        0.7004738669057886,
+                        0.9560326002850131,
+                        1.0831680864732056,
+                        0.9302691326844389,
+                        0.9407919516282122,
+                        0.8708005972915708,
+                        0.13354543560754517,
+                        1.016746388741999,
+                        -0.248497293042898,
+                        -0.0023810440111281766,
+                        1.394674202896306,
+                        1.3822062824800365,
+                        0.18536583996392064,
+                        -0.5661341051311104,
+                        1.0312585749476002,
+                        1.3670045443132963,
+                        1.4117802701173998,
+                        -0.6446337379576988,
+                        -0.5571906301445769,
+                        -0.8700026222883518,
+                        -0.2852386440277824,
+                        -0.3088504372269322,
+                        -0.2981218852871237,
+                        0.187695595180146,
+                        4.935198898181377,
+                        16.52520359851116,
+                        13.459944113349584
+                    ],
+                    "heading": 1.978039818926907,
+                    "geomStamp": 1462611058
+                },
+                {
+                    "wspeeds": [
+                        8.0,
+                        9.275862068965518,
+                        10.551724137931036,
+                        11.827586206896552,
+                        13.10344827586207,
+                        14.379310344827587,
+                        15.655172413793103,
+                        16.93103448275862,
+                        18.20689655172414,
+                        19.48275862068966,
+                        20.758620689655174,
+                        22.03448275862069,
+                        23.310344827586206,
+                        24.586206896551726,
+                        25.862068965517242,
+                        27.13793103448276,
+                        28.413793103448278,
+                        29.689655172413794,
+                        30.965517241379313,
+                        32.241379310344826,
+                        33.51724137931035,
+                        34.793103448275865,
+                        36.06896551724138,
+                        37.344827586206904,
+                        38.62068965517241,
+                        39.896551724137936,
+                        41.17241379310345,
+                        42.44827586206897,
+                        43.724137931034484,
+                        45.0
+                    ],
+                    "bspeeds": [
+                        0.43636417904174435,
+                        0.4773877039678078,
+                        0.540157375520034,
+                        0.6183105370985059,
+                        0.7080329201395608,
+                        0.8021322261142296,
+                        0.8973913410118057,
+                        0.9920780848683451,
+                        1.0855908470458506,
+                        1.1779055982079067,
+                        1.269309441674956,
+                        1.360191237947053,
+                        1.450968438455399,
+                        1.5414721571270347,
+                        1.6289598478409015,
+                        1.713075986320677,
+                        1.7946403276755467,
+                        1.8752337248323354,
+                        1.9554343417245807,
+                        2.0353518443771437,
+                        2.114971256721279,
+                        2.194263018056848,
+                        2.2727715163427358,
+                        2.3495086397326874,
+                        2.425626526930308,
+                        2.5012749698200434,
+                        2.576349137173991,
+                        2.650626463341786,
+                        2.723518518994802,
+                        2.791819581521323
+                    ],
+                    "rolls": [
+                        -0.041463838322835296,
+                        -0.02350123309917821,
+                        -0.019696082680511942,
+                        -0.009220073845365082,
+                        0.0014367447118823987,
+                        0.013325091155287036,
+                        0.026096782766884864,
+                        0.03956225650370056,
+                        0.05366415937142261,
+                        0.06836621558985506,
+                        0.08373922232311709,
+                        0.09960212903641835,
+                        0.1159326242722858,
+                        0.1320465316352348,
+                        0.1454554363519098,
+                        0.15999907992484355,
+                        0.17448007355197692,
+                        0.18929276553175356,
+                        0.2042953458975181,
+                        0.21940523881577526,
+                        0.23464424923781024,
+                        0.24995581721947316,
+                        0.2680662600110992,
+                        0.2878649510073509,
+                        0.3068567314314201,
+                        0.32540158847061473,
+                        0.34342031861826566,
+                        0.3608724264714664,
+                        0.3786133522764175,
+                        0.4016992881801029
+                    ],
+                    "pitchs": [
+                        -0.012604137821971595,
+                        -0.016280192363009205,
+                        -0.017472980533045364,
+                        -0.020226790158946364,
+                        -0.02332099705830987,
+                        -0.02473599534335484,
+                        -0.026551750756671398,
+                        -0.02843354939590579,
+                        -0.03041867956478565,
+                        -0.032078441267744916,
+                        -0.033481210462748115,
+                        -0.03503047482185708,
+                        -0.03672900127542212,
+                        -0.03834772798533033,
+                        -0.04011246928080357,
+                        -0.04228604166414346,
+                        -0.044671774223096344,
+                        -0.04730564363091499,
+                        -0.05020219269615933,
+                        -0.05338099250927095,
+                        -0.05686828941102881,
+                        -0.06068828359812882,
+                        -0.06524226151704092,
+                        -0.07026597600636808,
+                        -0.07570470385309724,
+                        -0.08155447961452894,
+                        -0.08782580195518341,
+                        -0.09447814943489212,
+                        -0.1017740268368647,
+                        -0.10957704999415209
+                    ],
+                    "mxs": [
+                        -1.4516727687898616,
+                        0.17165953592222846,
+                        -0.33797854614049516,
+                        -0.21392290945478468,
+                        -0.2521381685676087,
+                        -0.2696259385898155,
+                        -0.28177379563560007,
+                        -0.2974646586467827,
+                        -0.310071541089755,
+                        -0.3243069390224692,
+                        -0.3297500309934111,
+                        -0.3372747718525579,
+                        -0.34243547115427186,
+                        -0.22336510660619965,
+                        -0.32661443964614156,
+                        -0.2888201991413624,
+                        -0.30541492583036395,
+                        -0.30895524693153675,
+                        -0.30998087583794154,
+                        -0.3138709693417227,
+                        -0.3146111564714728,
+                        -0.31458305522058233,
+                        -0.4146768980110305,
+                        -0.37820837209682906,
+                        -0.37246149023828673,
+                        -0.36388032432870937,
+                        -0.351715417453337,
+                        -0.3507719795140976,
+                        -0.45423900336750034,
+                        -0.4205765610302433
+                    ],
+                    "mys": [
+                        1.1165068086308645,
+                        0.04135114575444175,
+                        0.6341225730384084,
+                        0.6251908761536533,
+                        0.5220421662922826,
+                        0.7144310410622247,
+                        0.6753805397539778,
+                        0.6715952436457941,
+                        0.6701663864384871,
+                        0.6677466024958442,
+                        0.6417896142808512,
+                        0.6235470168435373,
+                        0.6216274568030082,
+                        0.6114670848387447,
+                        0.5870679929277525,
+                        0.5842621728702365,
+                        0.587550868427803,
+                        0.5889595151106997,
+                        0.593523321304975,
+                        0.597260418050539,
+                        0.6020423878298081,
+                        0.6066311051092478,
+                        0.6116161680366986,
+                        0.6122110732764158,
+                        0.6048055447446801,
+                        0.6118124521457893,
+                        0.6091516473805304,
+                        0.6057607111656597,
+                        0.5951150458196459,
+                        0.5560663060792304
+                    ],
+                    "heading": 1.3380857598623195,
+                    "geomStamp": 1462611058
+                },
+                {
+                    "wspeeds": [
+                        8.0,
+                        15.655172413793103,
+                        16.93103448275862,
+                        18.20689655172414,
+                        19.48275862068966,
+                        20.758620689655174,
+                        22.03448275862069,
+                        23.310344827586206,
+                        24.586206896551726,
+                        25.862068965517242,
+                        27.13793103448276,
+                        28.413793103448278,
+                        29.689655172413794,
+                        30.965517241379313,
+                        32.241379310344826,
+                        33.51724137931035,
+                        34.793103448275865,
+                        36.06896551724138,
+                        37.344827586206904,
+                        38.62068965517241,
+                        39.896551724137936,
+                        41.17241379310345,
+                        42.44827586206897,
+                        43.724137931034484,
+                        45.0
+                    ],
+                    "bspeeds": [
+                        0.3465179533172595,
+                        0.643214826421294,
+                        0.7111831828067757,
+                        0.7783206517789206,
+                        0.8443436987158437,
+                        0.909262560805046,
+                        0.9731527585720406,
+                        1.0361216107960005,
+                        1.0983047871325022,
+                        1.1599457645356257,
+                        1.220836009458169,
+                        1.28175109874331,
+                        1.341042162268124,
+                        1.3858852434506055,
+                        1.4133261377787611,
+                        1.4128872774937873,
+                        1.3825519155857335,
+                        1.354044994607232,
+                        1.3369599103320395,
+                        1.3293375790822366,
+                        1.326038239324786,
+                        1.3237584704847152,
+                        1.320692296214502,
+                        1.3161557761420744,
+                        1.309975350877245
+                    ],
+                    "rolls": [
+                        -0.004906093581962246,
+                        0.1178692998603107,
+                        0.13990127884243844,
+                        0.15893907200934476,
+                        0.17967044322293665,
+                        0.20161658956461595,
+                        0.22471892779173067,
+                        0.24895921762216205,
+                        0.2794391900871367,
+                        0.3140660638053767,
+                        0.3481490462768997,
+                        0.3826525262388634,
+                        0.44256040780472944,
+                        0.5179388279477738,
+                        0.6078483017635705,
+                        0.703456262277718,
+                        0.7703652337597238,
+                        0.8054545531564651,
+                        0.8256184865631008,
+                        0.8387551605021859,
+                        0.8487920556456982,
+                        0.8572066994258928,
+                        0.8647841851293423,
+                        0.8718568076406287,
+                        0.878569200810235
+                    ],
+                    "pitchs": [
+                        -0.01713177003349245,
+                        -0.015705258119270323,
+                        -0.015244750570352116,
+                        -0.01494986522336131,
+                        -0.014659832658514319,
+                        -0.014400326773922131,
+                        -0.01420992753498601,
+                        -0.014071649876896644,
+                        -0.014382546089379403,
+                        -0.01490774507997273,
+                        -0.015829848097575174,
+                        -0.01716273261183789,
+                        -0.018353645137735495,
+                        -0.020629051168272905,
+                        -0.02408560523074515,
+                        -0.027588043562441978,
+                        -0.02968572499272817,
+                        -0.03079310628910085,
+                        -0.031750500235115296,
+                        -0.032892336074746155,
+                        -0.033818869812101984,
+                        -0.034535458654323406,
+                        -0.03501530624990043,
+                        -0.03526715014779727,
+                        -0.035310074650762094
+                    ],
+                    "mxs": [
+                        -2.7281512365669363,
+                        -0.5074444258551657,
+                        -0.3049922335830523,
+                        -0.4278254561405976,
+                        -0.4530211057280327,
+                        -0.4684135531286308,
+                        -0.48815755859992405,
+                        -0.5103084003453547,
+                        -0.72600384970592,
+                        -0.6584164732766582,
+                        -0.670748412514814,
+                        -1.1435287448054812,
+                        -1.588013408237286,
+                        -1.6012092800863114,
+                        -1.859216574085083,
+                        -1.2948798332057398,
+                        -0.525373246236856,
+                        -0.3706902497376124,
+                        -0.2828660651992073,
+                        -0.24294413763340392,
+                        -0.205720650062339,
+                        -0.18348638105100296,
+                        -0.16472858859854725,
+                        -0.14737587310919584,
+                        -0.13158517290561206
+                    ],
+                    "mys": [
+                        1.0882859151845095,
+                        0.46050007517888414,
+                        0.4600771156961079,
+                        0.4581063882779761,
+                        0.43031941447877153,
+                        0.4343840530568104,
+                        0.42392424154414016,
+                        0.4198411926873509,
+                        0.42827310217061637,
+                        0.4282984503725388,
+                        0.42802298900510755,
+                        0.42129140675562327,
+                        0.3696567343022083,
+                        0.29489858656581813,
+                        0.11045849817541745,
+                        -0.15466288875435394,
+                        -0.3153878257904332,
+                        -0.24748126024001663,
+                        -0.1535717059581104,
+                        -0.11747522638833291,
+                        -0.08941646483195402,
+                        -0.07833060468596074,
+                        -0.07604338797493707,
+                        -0.07838327731399097,
+                        -0.08283445309204171
+                    ],
+                    "heading": 0.6981317007977318,
+                    "geomStamp": 1462611058
+                }
+            ]
+        }
+    },
+    "reportGenerator": {
+        "lastPDFPath": "C:\\Users\\alber\\Documents\\GIT\\Posidonie\\reports\\report_20-May-2025_01-00-19"
+    }
+}
