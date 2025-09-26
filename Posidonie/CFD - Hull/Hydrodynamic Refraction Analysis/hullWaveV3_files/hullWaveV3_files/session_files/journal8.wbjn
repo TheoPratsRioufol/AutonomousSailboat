@@ -1,0 +1,16 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+system1 = GetSystem(Name="SYS")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+string1 = geometry1.GetGeometryFileAndSaveData()
+system2 = GetSystem(Name="AQW 1")
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)
+string2 = geometry1.GetGeometryFileAndSaveData()
+setup1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)

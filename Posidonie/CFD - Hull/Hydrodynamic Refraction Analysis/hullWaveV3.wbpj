@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Storage>
+  <Project Version="24.2.1.0">
+    <base-designpoint-name valType="String">0</base-designpoint-name>
+    <timestamp-max valType="Int64">4912</timestamp-max>
+    <framework-build-version valType="String">24.2.133.0</framework-build-version>
+    <external-version-string valType="String">2024 R2</external-version-string>
+    <last-saved-utc valType="String">05/11/2025 21:04:37</last-saved-utc>
+    <managed-categories valType="String">[report, misc, progress]</managed-categories>
+    <logHistory valType="StringArray">
+      <ArrayEntry Index="0">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents10492.log</ArrayEntry>
+      <ArrayEntry Index="1">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents2540.log</ArrayEntry>
+      <ArrayEntry Index="2">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents16116.log</ArrayEntry>
+      <ArrayEntry Index="3">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents15020.log</ArrayEntry>
+      <ArrayEntry Index="4">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents12720.log</ArrayEntry>
+      <ArrayEntry Index="5">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents16800.log</ArrayEntry>
+      <ArrayEntry Index="6">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents2900.log</ArrayEntry>
+      <ArrayEntry Index="7">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents15452.log</ArrayEntry>
+      <ArrayEntry Index="8">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents16400.log</ArrayEntry>
+      <ArrayEntry Index="9">alber@LAPTOP-NPIBCNPJ:C:\Users\alber\AppData\Local\Temp\WorkbenchLogs\CoreEvents10056.log</ArrayEntry>
+    </logHistory>
+    <expression-scope-container valType="String">Parameters</expression-scope-container>
+    <project-type valType="String">WB2</project-type>
+    <project-id valType="String">8d6254d9-8401-4676-8565-c66fb1dc2ad2</project-id>
+    <ReferenceCache>
+      <ProjectReferenceList>
+        <ReferenceList valType="String">{
+"3271c73a-accc-4ac1-8e38-5a37837c1adc": "/Schematic/Component:Geometry 1",
+"34cae846-49ce-4ae9-bf1a-4548ad469602": "/FileTypesContainer/FileType:GeometryFileType",
+"2aa42f24-39de-403f-a7a6-e14438c7ed48": "/FileTypesContainer/FileType:project",
+"d61604a5-058b-4767-af6c-1e69b30b3f9b": "/FileTypesContainer/FileType:ACTDatabase",
+"225b1d5c-42ad-4dc2-b7de-9d8049d106c1": "/Schematic/System:AQW",
+"9e90eaf9-b5c2-481d-b45c-7e3df4889761": "/Schematic/Component:Results",
+"fc0f6da8-c1ff-4cc4-9a4b-6851169a0926": "/Schematic/Component:Solution",
+"3d4b764e-2520-4ad6-9257-9e9cdf505782": "/Schematic/Component:Setup",
+"6420339a-abb2-4e8b-a193-04c8cdf4591e": "/Schematic/Component:Model",
+"7bac2c73-5e77-4da5-9ae8-e257f5cb1885": "/Schematic/Template:Hydrodynamic Diffraction (AQWA)",
+"a6fffe2f-0f81-4203-b48d-85d70d1e0077": "/Schematic/Template:Fluid Flow (CFX)",
+"0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93": "/Schematic/Template:Static Structural (ANSYS)",
+"06457686-e1e6-4c11-a148-0bae338e9ceb": "/Schematic/Template:Fluid Flow",
+"b0e8fe1b-18dd-4e3d-8271-d7a710e24377": "/Schematic/Template:Steady-State Thermal (ANSYS)",
+"3a1c1aa6-4381-43df-8e9b-da173b6a4641": "/Schematic/Template:Modal (ANSYS)",
+"99755505-9d14-4747-80b7-01d47ee5ff38": "/Schematic/Template:Random Vibration (ANSYS)",
+"18bc52c0-2f8b-4495-ad01-4fce308bec25": "/Schematic/Template:Response Spectrum (ANSYS)",
+"cae96f31-3d4b-4140-aaa7-18efbddaae06": "/Schematic/Template:Transient Thermal (ANSYS)",
+"b1d554a9-795b-4465-bc54-ad56ded34179": "/Schematic/ComponentTemplate:GeometryCellTemplate",
+"d8875450-9102-4ac3-b5b1-2e892936bef5": "/Schematic/ComponentTemplate:AQWAModelCellTemplate",
+"6c15d9bf-b39a-41b9-ae9c-4b84545eb2d2": "/Schematic/ComponentTemplate:AQWASetupHDCellTemplate",
+"8eb8a369-dc22-4a11-a17e-4aa4efe08fa9": "/Schematic/ComponentTemplate:AQWAAnalysisCellTemplate",
+"41894350-9c4a-47ca-95dc-eda2c5b1add0": "/Schematic/ComponentTemplate:AQWAResultsCellTemplate",
+"0452f086-9c08-4f45-9f1d-d0ca1515615f": "/FileContainer/FileReference:F5",
+"c33fd3bc-27d4-4307-80e7-98f69a52beec": "/FileContainer/FileReference:F6",
+"0a00ebe1-f4fb-426d-bf0d-4e0734578699": "/FileTypesContainer/FileType:MeshFileType",
+"4b5b029b-68fd-431d-b460-e9aff832be1e": "/Schematic/Component:Mesh",
+"534385ee-a439-425c-bae2-735fb0fd65fd": "/Schematic/Template:Mesh",
+"30b1ad12-0544-4867-8a3f-22f1bbb0ce16": "/Schematic/Component:Geometry 2",
+"6f50bbd1-825c-4e20-ad77-e6c12143820f": "/Schematic/Template:Geometry",
+"b327c76a-b87b-4fb4-9e5f-7b0b4d1b0881": "/Schematic/System:SYS",
+"0afa5433-c0c5-41ef-bfa0-c95155f96582": "/Schematic/ComponentTemplate:SimulationMeshingModelCellTemplate",
+"f6dc9b78-2c87-4714-b064-0ca26bb0fb7d": "/Schematic/System:Geom",
+"30bfa245-6ddf-4b32-ae3e-e39c452a9e7d": "/FileContainer/FileReference:F7",
+"13a5f099-941b-4b4a-a399-227892178329": "/FileContainer/FileReference:F8",
+"198fcfbb-16e0-4273-8c85-68061c619ead": "/FileTypesContainer/FileType:StandardMeshFileType",
+"a1042e97-c419-4a7c-8be9-0b9340cfc75f": "/FileTypesContainer/FileType:AQWAWBDatabase",
+"e15a49dd-e147-46db-8c85-d172cd430f26": "/FileTypesContainer/FileType:default",
+"f608f44a-b1de-463d-9489-dd79d6c4482e": "/Schematic/System:AQW 1",
+"6a7d580a-0cd7-4615-aed9-3db615d9f494": "/Schematic/Component:Model 1",
+"64c3a4f7-1b57-4300-8dc7-d589d9ab56f8": "/Schematic/Component:Setup 1",
+"9040d00c-3ee7-4122-b317-f7122ee9d523": "/Schematic/Component:Solution 1",
+"c41079d2-2801-4127-b7b3-798bc4ea8140": "/Schematic/Component:Results 1",
+"e0d5ac27-45a2-4394-9109-22e84dd52b62": "/Schematic/Template:Hydrodynamic Response (AQWA)",
+"e475adbe-cafc-4790-8475-9d0f40828aef": "/Schematic/ComponentTemplate:AQWASetupTHCellTemplate",
+"b681ff82-623c-413b-84a8-bea039e922da": "/FileContainer/FileReference:F24",
+"a4fa8e7a-7d5c-4b15-bcbe-4b7f2db66c5f": "/FileContainer/FileReference:F23",
+"9bc8208c-f802-42e2-b76d-478168b01646": "/FileContainer/FileReference:F22"
+}</ReferenceList>
+      </ProjectReferenceList>
+      <DesignPointReferenceListCollection>
+        <DesignPointReferenceList Name="0">
+          <ReferenceList valType="String">{
+"80e0b808-1e7c-4f4d-995a-aad32e50c305": "/Geometry/Geometry:GeometryDataObject",
+"472424fa-0b9f-457f-a698-2a63aac74d8e": "/Mesh/MechanicalModel:MechanicalModel",
+"9af593f0-86d7-4fbe-b16f-4dbc37b2bc6e": "/Mesh/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider",
+"ced3ce6f-b477-4a9b-8100-ae140296362c": "/Mesh/GeneratedMeshOutputForAQWAModelProvider:GeneratedMeshOutputForAQWAModelProvider"
+}</ReferenceList>
+        </DesignPointReferenceList>
+      </DesignPointReferenceListCollection>
+    </ReferenceCache>
+  </Project>
+  <Addins>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.ProjectSchematic.ProjectSchematicAddin, Ansys.ProjectReporting.Addin, Ansys.Graphics.GraphicsAddin, Ansys.Units.Commands.Addin, Ansys.ACT.WorkBench.Addin, Ansys.Rep.RepAddin]</addin-list>
+    <Addin Name="Ansys.ParameterManager.ParameterManagerAddin" Version="7.3" />
+    <Addin Name="Ansys.ProjectSchematic.ProjectSchematicAddin" Version="14.0" />
+    <Addin Name="Ansys.ProjectReporting.Addin" Version="6.0" />
+    <Addin Name="Ansys.Graphics.GraphicsAddin" Version="1.1" />
+    <Addin Name="Ansys.Units.Commands.Addin" Version="7.1" />
+    <Addin Name="Ansys.ACT.WorkBench.Addin" Version="4.2">
+      <ExtensionsLoaded valType="StringArray">
+        <ArrayEntry Index="0">1;LSDYNA;5f463412-bd3e-484b-87e7-cbc0a665e474;LSDYNA;wbex;2024;2</ArrayEntry>
+        <ArrayEntry Index="1">1;ANSYSMotion;20180725-3f81-49eb-9f31-41364844c769;ANSYSMotion;wbex;2024;2</ArrayEntry>
+        <ArrayEntry Index="2">1;AqwaLoadMapping;4a217913-2035-4362-96b3-10d129d8ee46;AqwaLoadMapping;wbex;2024;2</ArrayEntry>
+      </ExtensionsLoaded>
+    </Addin>
+    <Addin Name="Ansys.Rep.RepAddin" Version="24.2.1.0">
+      <is-optional-on-resume valType="Boolean">true</is-optional-on-resume>
+    </Addin>
+  </Addins>
+  <Containers>
+    <container-map valType="String">{"FileContainer": Project:FileContainer, "Messages": Project:Messages, "Parameters": Ansys.ParameterManager.ParameterManagerAddin:parameters, "Schematic": Ansys.ProjectSchematic.ProjectSchematicAddin:Default, "ReportDataContainer": Ansys.ProjectReporting.Addin:ReportDataContainer, "Graphics": Ansys.Graphics.GraphicsAddin:graphics, "Units": Ansys.Units.Commands.Addin:Units, "RepContainer": Ansys.Rep.RepAddin:RepContainer}</container-map>
+    <static-container-ids valType="String">{"FileContainer": FileManager, "Parameters": Parameters, "Schematic": Schematic, "ReportDataContainer": ReportDataContainer, "Graphics": Graphics, "Units": Units, "RepContainer": RepContainer}</static-container-ids>
+    <Container Name="FileContainer" Version="1.0">
+      <container-type valType="String">Project:FileContainer</container-type>
+      <static-id valType="String">FileManager</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 4910, "Input": 1474, "Output": 1474}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/FileContainer/FileReference:F7" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F7</object-name>
+        <member-data valType="String">{"DisplayText": "SYS.pmdb", "FileType": $$34cae846-49ce-4ae9-bf1a-4548ad469602, "DependentFiles": [], "ContainerAssociations": ["Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS\MECH\SYS.pmdb", "ReferenceCount": 15}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F22" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F22</object-name>
+        <member-data valType="String">{"DisplayText": "hull_80.IGS", "FileType": $$34cae846-49ce-4ae9-bf1a-4548ad469602, "DependentFiles": [], "ContainerAssociations": ["Geometry"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"C:\Users\alber\Desktop\Posidonie\Conception\Coque\hull_80.IGS", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F3" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F3</object-name>
+        <member-data valType="String">{"DisplayText": "hullWaveV3.wbpj", "FileType": $$2aa42f24-39de-403f-a7a6-e14438c7ed48, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": "$(ProjectName).wbpj", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F4" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F4</object-name>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$d61604a5-058b-4767-af6c-1e69b30b3f9b, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 62}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F6" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F6</object-name>
+        <member-data valType="String">{"DisplayText": "SYS.mshdb", "FileType": $$0a00ebe1-f4fb-426d-bf0d-4e0734578699, "DependentFiles": [], "ContainerAssociations": ["Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\SYS.mshdb", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F5" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F5</object-name>
+        <member-data valType="String">{"DisplayText": "AQW.agdb", "FileType": $$34cae846-49ce-4ae9-bf1a-4548ad469602, "DependentFiles": [], "ContainerAssociations": ["Geometry"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\AQW\DM\AQW.agdb", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F8" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F8</object-name>
+        <member-data valType="String">{"DisplayText": "SYS.acmo", "FileType": $$198fcfbb-16e0-4273-8c85-68061c619ead, "DependentFiles": [], "ContainerAssociations": ["Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS\MECH\SYS.acmo", "ReferenceCount": 15}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F9" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F9</object-name>
+        <member-data valType="String">{"DisplayText": "SYS.acmo", "FileType": $$198fcfbb-16e0-4273-8c85-68061c619ead, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\AQW-1\AQWA\Mesh\SYS.acmo", "ReferenceCount": 15}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F10" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F10</object-name>
+        <member-data valType="String">{"DisplayText": "SYS.pmdb", "FileType": $$34cae846-49ce-4ae9-bf1a-4548ad469602, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\AQW-1\AQWA\Mesh\SYS.pmdb", "ReferenceCount": 15}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F24" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F24</object-name>
+        <member-data valType="String">{"DisplayText": "AQW-1.aqdb.mesh", "FileType": $$e15a49dd-e147-46db-8c85-d172cd430f26, "DependentFiles": [], "ContainerAssociations": ["Model"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\AQW-1\AQW\AQW-1.aqdb.mesh", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F23" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F23</object-name>
+        <member-data valType="String">{"DisplayText": "AQW-1.aqdb", "FileType": $$a1042e97-c419-4a7c-8be9-0b9340cfc75f, "DependentFiles": [], "ContainerAssociations": ["Model"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\AQW-1\AQW\AQW-1.aqdb", "ReferenceCount": 1}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Messages" Version="1.0">
+      <container-type valType="String">Project:Messages</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 4761, "Input": 1475, "Output": 1475}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Messages/StoredMessage:Message" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Actualisation de 'component Model in system Diffraction hydrodynamique' impossible. Les fichiers de transfert des données du maillage généré n'est pas disponible : Veuillez s'il vous plait essayer la mise à jour sur 'component Maillage in system Maillage'.", "Details": """System.InvalidOperationException: Actualisation de 'component Model in system Diffraction hydrodynamique' impossible. Les fichiers de transfert des données du maillage généré n'est pas disponible : Veuillez s'il vous plait essayer la mise à jour sur 'component Maillage in system Maillage'.
+   à Ansys.AQWA.Commands.RefreshModelCommand.Execute(IFullContext context)
+   à Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Actualisation de 'component Model in system Diffraction hydrodynamique' impossible. Les fichiers de transfert des données du maillage généré n'est pas disponible : Veuillez s'il vous plait essayer la mise à jour sur 'component Maillage in system Maillage'.
+CommandName: AQWA.RefreshModel(Container=\"Model\")
+   à Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   à Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   à Ansys.ProjectSchematic.Commands.RefreshCommand.RefreshComponents(IFullContext context, IEnumerable`1 componentsToRefresh, Boolean refreshUnfulfilled)
+   à Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Actualisation de 'component Model in system Diffraction hydrodynamique' impossible. Les fichiers de transfert des données du maillage généré n'est pas disponible : Veuillez s'il vous plait essayer la mise à jour sur 'component Maillage in system Maillage'.
+CommandName: RefreshComponent(Component=\"/Schematic/Component:Model\")
+   à Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   à Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   à Ansys.ProjectSchematic.Commands.RefreshComponentCommand.InvokeAndWait(IProtectedContext context, DataReference Component)
+   à Ansys.AQWA.GUI.ViewComponent.ViewCell(GuiOperationContext context, DataContainerReference dcr)
+   à Ansys.UI.GuiOperationContext.Invoke(GuiOperationMetaData operationData)
+   à Ansys.UI.UIManager.InvokeOperationCore(String pseudoname, OperationDelegate callback, Boolean allowOSMessages, Boolean coreTransaction, Boolean deferredRefreshOnly)
+""", "Association": "", "DateTimeStamp": 05/06/2025 13:19:05, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 1" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 1</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": 'Hydrodynamic Diffraction (00):  The fingerprint of one of the hydrodynamic output files (TimeResponse.RES) of Analysis "Hydrodynamic Response (00)" has changed : c99a5ef3710522b1cc166262c6af7ac1e536c57 -&gt; ee79fb88878a24dc10afaad69fec3b6c69329fb.', "Details": None, "Association": "", "DateTimeStamp": 05/08/2025 09:57:56, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 2" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 2</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": 'Hydrodynamic Diffraction:  Hydrodynamic output files of Analysis "Hydrodynamic Response (00)" have been modified externally. Clearing the results.', "Details": None, "Association": "", "DateTimeStamp": 05/08/2025 09:57:56, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 3" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 3</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Échec de WB2PutTHUpstreamHash. L'application s’est bloquée ou Workbench a perdu la communication avec elle.", "Details": """System.Net.Sockets.SocketException: Une connexion existante a dû être fermée par l’hôte distant
+
+Server stack trace: 
+   à System.Runtime.Remoting.Channels.SocketStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   à System.Runtime.Remoting.Channels.SocketHandler.ReadFromSocket(Byte[] buffer, Int32 offset, Int32 count)
+   à System.Runtime.Remoting.Channels.SocketHandler.Read(Byte[] buffer, Int32 offset, Int32 count)
+   à System.Runtime.Remoting.Channels.SocketHandler.ReadAndMatchFourBytes(Byte[] buffer)
+   à System.Runtime.Remoting.Channels.Tcp.TcpSocketHandler.ReadAndMatchPreamble()
+   à System.Runtime.Remoting.Channels.Tcp.TcpSocketHandler.ReadVersionAndOperation(UInt16&amp; operation)
+   à System.Runtime.Remoting.Channels.Tcp.TcpClientSocketHandler.ReadHeaders()
+   à System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders&amp; responseHeaders, Stream&amp; responseStream)
+   à System.Runtime.Remoting.Channels.BinaryClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   à Ans.AQWA.RemoteItf.IAQWAHelper.WB2PutTHUpstreamHash(String SetupHash, String SolutionHash)
+   à Ansys.Addins.Infrastructure.Remoting.RemotingApiHelper.FatalApiMethodUserError[TReturn](String message, DataContainerReference container, RemotingApiMethod`1 callback)
+--- Ansys.Addins.Infrastructure.Exceptions.AddinUserException: Échec de WB2PutTHUpstreamHash. L'application s’est bloquée ou Workbench a perdu la communication avec elle.
+   à Ansys.Addins.Infrastructure.Remoting.RemotingApiHelper.FatalApiMethodUserError[TReturn](String message, DataContainerReference container, RemotingApiMethod`1 callback)
+   à Ansys.AQWA.Core.IAQWAHelperWrapper.WB2PutTHUpstreamHash(String SetupHash, String SolutionHash)
+   à Ansys.AQWA.Commands.OpenFile.Execute(IFullContext context)
+   à Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Échec de WB2PutTHUpstreamHash. L'application s’est bloquée ou Workbench a perdu la communication avec elle.
+CommandName: AQWA.OpenFile(ModelContainer=\"Model\")
+   à Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   à Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   à Ansys.AQWA.Commands.OpenFile.InvokeAndWait(IProtectedContext context, DataContainerReference ModelContainer, Output`1 needToReAttachGeom)
+   à Ansys.AQWA.Commands.SmartEditorStart.Execute(IFullContext context)
+   à Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Échec de WB2PutTHUpstreamHash. L'application s’est bloquée ou Workbench a perdu la communication avec elle.
+CommandName: AQWA.SmartEditorStart(Container=\"Setup 1\")
+   à Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   à Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   à Ansys.AQWA.Commands.SmartEditorStart.InvokeAndWait(IProtectedContext context, DataContainerReference Container)
+   à Ansys.AQWA.Commands.HelperClasses.ContainerHelper.LaunchEditor(IFullContext context, DataContainerReference container)
+   à Ansys.AQWA.Commands.StartEditor.Execute(IFullContext context)
+   à Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   à Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Échec de WB2PutTHUpstreamHash. L'application s’est bloquée ou Workbench a perdu la communication avec elle.
+CommandName: AQWA.StartEditor(Container=\"Setup 1\")
+   à Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   à Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   à Ansys.AQWA.Commands.StartEditor.InvokeAndWait(IProtectedContext context, DataContainerReference Container)
+   à Ansys.AQWA.GUI.ViewComponent.ViewCell(GuiOperationContext context, DataContainerReference dcr)
+   à Ansys.UI.GuiOperationContext.Invoke(GuiOperationMetaData operationData)
+   à Ansys.UI.UIManager.InvokeOperationCore(String pseudoname, OperationDelegate callback, Boolean allowOSMessages, Boolean coreTransaction, Boolean deferredRefreshOnly)
+""", "Association": "", "DateTimeStamp": 05/09/2025 23:26:22, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 4" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 4</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\Analysis.dat""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 5" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 5</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.HYD""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 6" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 6</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.LIS""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 7" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 7</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.MES""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 8" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 8</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.MQT""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 9" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 9</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.PAC""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 10" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 10</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.PAG""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 11" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 11</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\Analysis.PLD""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 12" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 12</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\Analysis.PLS""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 13" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 13</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.PLT""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 14" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 14</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.POT""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 15" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 15</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.QTF""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 16" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 16</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.RES""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 17" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 17</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\Analysis.SFM""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 18" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 18</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.USS""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 19" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 19</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Le fichier de projet suivant n'a peut-être pas été sauvegardé avant sa modification :
+C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV2_files\dp0\AQW-1\AQW\AQ\Analysis\ANALYSIS.VAC""", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 00:59:45, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 20" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 20</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Échec de la mise à jour du composant Model dans Diffraction hydrodynamique.  La mise à jour du composant Model dans Diffraction hydrodynamique n'a pas marqué le conteneur comme mis à jour (l'état final est Modified).", "Details": None, "Association": "", "DateTimeStamp": 05/10/2025 12:49:12, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$6420339a-abb2-4e8b-a193-04c8cdf4591e, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 21" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 21</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Des données saisies par l'utilisateur sont requises avant la mise à jour du composant Maillage dans Maillage. Pour des instructions sur comment corriger la cellule dans son état en cours, cliquez sur le triangle bleu dans le coin inférieur droit de la cellule dans le schéma du projet.", "Details": None, "Association": "", "DateTimeStamp": 05/11/2025 20:07:59, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 22" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 22</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r'Hydrodynamic Diffraction (D3):  Error when calculating fingerprint of file "C:\Users\alber\Desktop\Posidonie\Conception\Coque\Ansys\hullWaveV3_files\dp0\AQW-2\AQW\AQ\Analysis\TimeResponse.RES": File could not be opened (Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus. ).', "Details": None, "Association": "", "DateTimeStamp": 05/11/2025 21:05:56, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 23" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 23</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": 'Hydrodynamic Diffraction (D3):  The fingerprint of one of the hydrodynamic output files (TimeResponse.RES) of Analysis "Hydrodynamic Response (D3)" has changed : 418b428849ba9ecee88c1f457fd0816d5f7db373 -&gt;.', "Details": None, "Association": "", "DateTimeStamp": 05/11/2025 21:05:56, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 24" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 24</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": 'Hydrodynamic Diffraction (D4):  Hydrodynamic output files of Analysis "Hydrodynamic Response (D3)" have been modified externally. Clearing the results.', "Details": None, "Association": "", "DateTimeStamp": 05/11/2025 21:05:56, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Parameters" Version="1.0">
+      <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
+      <static-id valType="String">Parameters</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <maxUpdateOrder valType="Double">1</maxUpdateOrder>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 4752, "Input": 3824, "Output": 1478}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Parameters/DesignPoint:0" Version="1.0">
+        <class-type valType="String">DesignPoint</class-type>
+        <object-name valType="String">0</object-name>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Mesh in SYS, Model in AQW"}, "Parameters": {}, "ParameterErrors": {}, "CurrentValues": {}, "ParameterStatus": {}, "Note": None, "IsUpToDate": False, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <properties-setByUserFlag-data valType="String">["IsDataModelValid"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Parameters/DesignPointReportSetting:Design Points Report Setting" Version="1.0">
+        <class-type valType="String">DesignPointReportSetting</class-type>
+        <object-name valType="String">Design Points Report Setting</object-name>
+        <member-data valType="String">{"DisplayText": "Design Points Report Setting", "DesignPointReportImage": "None"}</member-data>
+      </Object>
+      <ParameterToPropertyMap />
+    </Container>
+    <Container Name="Schematic" Version="1.0">
+      <container-type valType="String">Ansys.ProjectSchematic.ProjectSchematicAddin:Default</container-type>
+      <static-id valType="String">Schematic</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 4748, "Input": 3966, "Output": 1481}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Schematic/System:AQW" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">AQW</object-name>
+        <member-data valType="String">{"DisplayText": "Diffraction hydrodynamique", "Components": [$$6420339a-abb2-4e8b-a193-04c8cdf4591e, $$3d4b764e-2520-4ad6-9257-9e9cdf505782, $$fc0f6da8-c1ff-4cc4-9a4b-6851169a0926, $$9e90eaf9-b5c2-481d-b45c-7e3df4889761], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Modal", "AnalysisType": "Hydrodynamic Diffraction", "SolverType": "Aqwa", "SolverTypeDisplayString": "Aqwa", "PhysicsTypeDisplayString": "Modal", "AnalysisTypeDisplayString": "Diffraction hydrodynamique", "SystemName": "Hydrodynamic Diffraction (AQWA)", "IsCreated": "True", "VOLATILE:SystemName": "AQW"}, "SystemType": "Hydrodynamic Diffraction (AQWA)", "HeaderText": "Diffraction hydrodynamique", "SystemTypeAbbreviation": "AQW", "UniqueSystemDirectoryName": "AQW-1", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_hdiffAN", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$7bac2c73-5e77-4da5-9ae8-e257f5cb1885, "Notes": None, "LayoutChildren": [$$f608f44a-b1de-463d-9489-dd79d6c4482e], "LayoutIndex": 0}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:SYS" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">SYS</object-name>
+        <member-data valType="String">{"DisplayText": "Maillage", "Components": [$$3271c73a-accc-4ac1-8e38-5a37837c1adc, $$4b5b029b-68fd-431d-b460-e9aff832be1e], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$4b5b029b-68fd-431d-b460-e9aff832be1e], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Any", "AnalysisType": "Any", "SolverType": "Any", "SolverTypeDisplayString": "Quelconque", "PhysicsTypeDisplayString": "Quelconque", "AnalysisTypeDisplayString": "Quelconque", "SystemName": "Mesh", "IsCreated": "True", "VOLATILE:SystemName": "SYS"}, "SystemType": "Mesh", "HeaderText": "Maillage", "SystemTypeAbbreviation": "SYS", "UniqueSystemDirectoryName": "SYS", "Physics": [], "AnalysisType": None, "SystemHelpId": None, "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$534385ee-a439-425c-bae2-735fb0fd65fd, "Notes": None, "LayoutChildren": [$$225b1d5c-42ad-4dc2-b7de-9d8049d106c1], "LayoutIndex": 1}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:Geom" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">Geom</object-name>
+        <member-data valType="String">{"DisplayText": "Géométrie", "Components": [$$30b1ad12-0544-4867-8a3f-22f1bbb0ce16], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsTypeDisplayString": "Quelconque", "IsCreated": "True", "VOLATILE:SystemName": "Geom"}, "SystemType": "Geometry", "HeaderText": "Géométrie", "SystemTypeAbbreviation": "Geom", "UniqueSystemDirectoryName": "Geom", "Physics": ["Any"], "AnalysisType": None, "SystemHelpId": "wb2sb_geomapp", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$6f50bbd1-825c-4e20-ad77-e6c12143820f, "Notes": None, "LayoutChildren": [$$b327c76a-b87b-4fb4-9e5f-7b0b4d1b0881], "LayoutIndex": 1}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:AQW 1" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">AQW 1</object-name>
+        <member-data valType="String">{"DisplayText": "Réponse hydrodynamique", "Components": [$$6a7d580a-0cd7-4615-aed9-3db615d9f494, $$64c3a4f7-1b57-4300-8dc7-d589d9ab56f8, $$9040d00c-3ee7-4122-b317-f7122ee9d523, $$c41079d2-2801-4127-b7b3-798bc4ea8140], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa", "SolverTypeDisplayString": "Aqwa", "PhysicsTypeDisplayString": "Transitoire", "AnalysisTypeDisplayString": "Réponse hydrodynamique", "SystemName": "Hydrodynamic Response (AQWA)", "IsCreated": "True", "VOLATILE:SystemName": "AQW 1"}, "SystemType": "Hydrodynamic Response (AQWA)", "HeaderText": "Réponse hydrodynamique", "SystemTypeAbbreviation": "AQW", "UniqueSystemDirectoryName": "AQW-2", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_htrAN", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$e0d5ac27-45a2-4394-9109-22e84dd52b62, "Notes": None, "LayoutChildren": [], "LayoutIndex": 0}</member-data>
+      </Object>
+      <Object Name="/Schematic/SchematicSettings:Schematic Settings" Version="1.0">
+        <class-type valType="String">SchematicSettings</class-type>
+        <object-name valType="String">Schematic Settings</object-name>
+        <member-data valType="String">{"DisplayText": "Schematic Settings", "WireBundling": False, "ShowSystemCoordinates": True, "Notes": None, "SuspendCollectingRSMResult": False}</member-data>
+      </Object>
+      <Object Name="/Schematic/DesignPointSolveSettings:Design Points Update Settings" Version="1.0">
+        <class-type valType="String">DesignPointSolveSettings</class-type>
+        <object-name valType="String">Design Points Update Settings</object-name>
+        <member-data valType="String">{"DisplayText": "Design Points Update Settings", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "UpdateMethod": "Foreground", "UpdateOrder": "UpdateFromCurrentDesignPoint", "PreRSMUpdate": "Geometry", "PartialUpdate": "None", "RetainPartialUpdate": "None", "ComponentExecutionMode": "Serial", "NumberOfCoresPerJob": 2, "RetainFailedDesignPoints": False, "DesignPointRetainedOrExportedUpdate": "Parameters", "DesignPointUpdateTimeout": 0, "JobStatusCheckIntervalInSeconds": 20, "NumberOfJobsToBeCreated": 1, "NumberOfTasksToBeCreated": 1}</member-data>
+      </Object>
+      <Object Name="/Schematic/Bookkeeper:Schematic bookkeeper" Version="1.0">
+        <class-type valType="String">Bookkeeper</class-type>
+        <object-name valType="String">Schematic bookkeeper</object-name>
+        <member-data valType="String">{"DisplayText": "Schematic bookkeeper", "UpfrontLicenseCheckoutSelection": []}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:FSI: Fluid Flow (CFX) -&gt; Static Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">FSI: Fluid Flow (CFX) -&gt; Static Structural</object-name>
+        <member-data valType="String">{"DisplayText": "FSI : Mécanique des Fluides (CFX) -&gt; Structure statique", "SystemTemplates": [$$a6fffe2f-0f81-4203-b48d-85d70d1e0077, $$0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93], "SystemNames": ["Fluid Flow (CFX)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Fluid Flow (CFX):Geometry", "Static Structural (ANSYS):Geometry"], ["Connect", "Fluid Flow (CFX):Solution:CFXTransferResultsTemplate", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Fluid Flow (CFX)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Fluid Flow (CFX)": ["Static Structural (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:FSI: Fluid Flow (FLUENT) -&gt; Static Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">FSI: Fluid Flow (FLUENT) -&gt; Static Structural</object-name>
+        <member-data valType="String">{"DisplayText": "FSI : Mécanique des Fluides (FLUENT) -&gt; Structure statique", "SystemTemplates": [$$06457686-e1e6-4c11-a148-0bae338e9ceb, $$0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93], "SystemNames": ["Fluid Flow (FLUENT)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Fluid Flow (FLUENT):Geometry", "Static Structural (ANSYS):Geometry"], ["Connect", "Fluid Flow (FLUENT):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Fluid Flow (FLUENT)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Fluid Flow (FLUENT)": ["Static Structural (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Thermal-Stress" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Thermal-Stress</object-name>
+        <member-data valType="String">{"DisplayText": "Thermomécanique", "SystemTemplates": [$$b0e8fe1b-18dd-4e3d-8271-d7a710e24377, $$0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93], "SystemNames": ["Steady-State Thermal (ANSYS)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Steady-State Thermal (ANSYS):Engineering Data", "Static Structural (ANSYS):Engineering Data"], ["Share", "Steady-State Thermal (ANSYS):Geometry", "Static Structural (ANSYS):Geometry"], ["Share", "Steady-State Thermal (ANSYS):Model", "Static Structural (ANSYS):Model"], ["Connect", "Steady-State Thermal (ANSYS):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Steady-State Thermal (ANSYS)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Steady-State Thermal (ANSYS)": ["Static Structural (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Pre-Stress Modal" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Pre-Stress Modal</object-name>
+        <member-data valType="String">{"DisplayText": "Modal précontraint", "SystemTemplates": [$$0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93, $$3a1c1aa6-4381-43df-8e9b-da173b6a4641], "SystemNames": ["Static Structural (ANSYS)", "Modal (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Static Structural (ANSYS):Engineering Data", "Modal (ANSYS):Engineering Data"], ["Share", "Static Structural (ANSYS):Geometry", "Modal (ANSYS):Geometry"], ["Share", "Static Structural (ANSYS):Model", "Modal (ANSYS):Model"], ["Connect", "Static Structural (ANSYS):Solution", "Modal (ANSYS):Setup"]], "LayoutIndices": {"Static Structural (ANSYS)": 1, "Modal (ANSYS)": 0}, "LayoutChildren": {"Static Structural (ANSYS)": ["Modal (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Random Vibration" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Random Vibration</object-name>
+        <member-data valType="String">{"DisplayText": "Vibration aléatoire", "SystemTemplates": [$$3a1c1aa6-4381-43df-8e9b-da173b6a4641, $$99755505-9d14-4747-80b7-01d47ee5ff38], "SystemNames": ["Modal (ANSYS)", "Random Vibration (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Modal (ANSYS):Engineering Data", "Random Vibration (ANSYS):Engineering Data"], ["Share", "Modal (ANSYS):Geometry", "Random Vibration (ANSYS):Geometry"], ["Share", "Modal (ANSYS):Model", "Random Vibration (ANSYS):Model"], ["Connect", "Modal (ANSYS):Solution", "Random Vibration (ANSYS):Setup"]], "LayoutIndices": {"Modal (ANSYS)": 1, "Random Vibration (ANSYS)": 0}, "LayoutChildren": {"Modal (ANSYS)": ["Random Vibration (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Response Spectrum" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Response Spectrum</object-name>
+        <member-data valType="String">{"DisplayText": "Spectre de réponse", "SystemTemplates": [$$3a1c1aa6-4381-43df-8e9b-da173b6a4641, $$18bc52c0-2f8b-4495-ad01-4fce308bec25], "SystemNames": ["Modal (ANSYS)", "Response Spectrum (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Modal (ANSYS):Engineering Data", "Response Spectrum (ANSYS):Engineering Data"], ["Share", "Modal (ANSYS):Geometry", "Response Spectrum (ANSYS):Geometry"], ["Share", "Modal (ANSYS):Model", "Response Spectrum (ANSYS):Model"], ["Connect", "Modal (ANSYS):Solution", "Response Spectrum (ANSYS):Setup"]], "LayoutIndices": {"Modal (ANSYS)": 1, "Response Spectrum (ANSYS)": 0}, "LayoutChildren": {"Modal (ANSYS)": ["Response Spectrum (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:AM DED Process" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">AM DED Process</object-name>
+        <member-data valType="String">{"DisplayText": "Processus AM DED", "SystemTemplates": [$$cae96f31-3d4b-4140-aaa7-18efbddaae06, $$0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93], "SystemNames": ["Transient Thermal (ANSYS)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Transient Thermal (ANSYS):Engineering Data", "Static Structural (ANSYS):Engineering Data"], ["Share", "Transient Thermal (ANSYS):Geometry", "Static Structural (ANSYS):Geometry"], ["Share", "Transient Thermal (ANSYS):Model", "Static Structural (ANSYS):Model"]], "LayoutIndices": {"Transient Thermal (ANSYS)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Transient Thermal (ANSYS)": ["Static Structural (ANSYS)"]}, "Attributes": {"Transient Thermal (ANSYS)": {"IsAMDEDSystem": "True"}, "Static Structural (ANSYS)": {"IsAMDEDSystem": "True"}}, "SystemDisplayTexts": {"Transient Thermal (ANSYS)": "AM DED Thermique", "Static Structural (ANSYS)": "AM DED Structurel"}, "DisabledOnPlatform": "Linux"}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:AM LPBF Thermal-Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">AM LPBF Thermal-Structural</object-name>
+        <member-data valType="String">{"DisplayText": "AM LPBF Thermo-Structurel", "SystemTemplates": [$$cae96f31-3d4b-4140-aaa7-18efbddaae06, $$0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93], "SystemNames": ["Transient Thermal (ANSYS)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Transient Thermal (ANSYS):Engineering Data", "Static Structural (ANSYS):Engineering Data"], ["Share", "Transient Thermal (ANSYS):Geometry", "Static Structural (ANSYS):Geometry"], ["Share", "Transient Thermal (ANSYS):Model", "Static Structural (ANSYS):Model"], ["Connect", "Transient Thermal (ANSYS):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Transient Thermal (ANSYS)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Transient Thermal (ANSYS)": ["Static Structural (ANSYS)"]}, "Attributes": {"Transient Thermal (ANSYS)": {"IsAMSystem": "True"}, "Static Structural (ANSYS)": {"IsAMSystem": "True"}}, "SystemDisplayTexts": {"Transient Thermal (ANSYS)": "AM LPBF Thermique", "Static Structural (ANSYS)": "AM LPBF Struturel"}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:AM LPBF Inherent Strain" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">AM LPBF Inherent Strain</object-name>
+        <member-data valType="String">{"DisplayText": "AM LPBF Déformation inhérente", "SystemTemplates": [$$0b15a66f-4d0a-4b7f-b680-3cf0f22f2f93], "SystemNames": ["Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [], "LayoutIndices": {}, "LayoutChildren": {}, "Attributes": {"Static Structural (ANSYS)": {"IsAMSystem": "True"}}, "SystemDisplayTexts": {"Static Structural (ANSYS)": "AM LPBF Déformation inhérente"}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Model" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Model</object-name>
+        <member-data valType="String">{"DisplayText": "Model", "ImageName": "model", "ComponentStateOnLastFailure": "Modified", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Model", "_overwrittenUpdatable": None, "Template": $$d8875450-9102-4ac3-b5b1-2e892936bef5, "InSystem": $$225b1d5c-42ad-4dc2-b7de-9d8049d106c1, "MasterSources": {"Sources": [[{"DataType": "GeneratedMeshOutputForAQWAModelProvider", "Component": $$4b5b029b-68fd-431d-b460-e9aff832be1e, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup</object-name>
+        <member-data valType="String">{"DisplayText": "Configuration", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup", "_overwrittenUpdatable": None, "Template": $$6c15d9bf-b39a-41b9-ae9c-4b84545eb2d2, "InSystem": $$225b1d5c-42ad-4dc2-b7de-9d8049d106c1, "MasterSources": {"Sources": [[{"DataType": "AqwaModel", "Component": $$6420339a-abb2-4e8b-a193-04c8cdf4591e, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "Aqwa", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution", "_overwrittenUpdatable": None, "Template": $$8eb8a369-dc22-4a11-a17e-4aa4efe08fa9, "InSystem": $$225b1d5c-42ad-4dc2-b7de-9d8049d106c1, "MasterSources": {"Sources": [[{"DataType": "AqwaSetup", "Component": $$3d4b764e-2520-4ad6-9257-9e9cdf505782, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "Aqwa", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Results" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Results</object-name>
+        <member-data valType="String">{"DisplayText": "Résultats", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results", "_overwrittenUpdatable": None, "Template": $$41894350-9c4a-47ca-95dc-eda2c5b1add0, "InSystem": $$225b1d5c-42ad-4dc2-b7de-9d8049d106c1, "MasterSources": {"Sources": [[{"DataType": "AqwaSolution", "Component": $$fc0f6da8-c1ff-4cc4-9a4b-6851169a0926, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "Aqwa", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Geometry 1" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Geometry 1</object-name>
+        <member-data valType="String">{"DisplayText": "Géométrie", "ImageName": "cad_designmodeler", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": $$30b1ad12-0544-4867-8a3f-22f1bbb0ce16, "DataSharing": "Full", "DataContainer": "Geometry", "_overwrittenUpdatable": None, "Template": $$b1d554a9-795b-4465-bc54-ad56ded34179, "InSystem": $$b327c76a-b87b-4fb4-9e5f-7b0b4d1b0881, "MasterSources": None, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Mesh" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Mesh</object-name>
+        <member-data valType="String">{"DisplayText": "Maillage", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Mesh", "_overwrittenUpdatable": None, "Template": $$0afa5433-c0c5-41ef-bfa0-c95155f96582, "InSystem": $$b327c76a-b87b-4fb4-9e5f-7b0b4d1b0881, "MasterSources": {"Sources": [[{"DataType": "Geometry", "Component": $$3271c73a-accc-4ac1-8e38-5a37837c1adc, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {"cfd_base": 2, "cfd_preppost": 2, "cfd_preppost_pro": 2}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Geometry 2" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Geometry 2</object-name>
+        <member-data valType="String">{"DisplayText": "Géométrie", "ImageName": "cad_designmodeler", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Geometry", "_overwrittenUpdatable": None, "Template": $$b1d554a9-795b-4465-bc54-ad56ded34179, "InSystem": $$f6dc9b78-2c87-4714-b064-0ca26bb0fb7d, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Model 1" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Model 1</object-name>
+        <member-data valType="String">{"DisplayText": "Model", "ImageName": "model", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": $$6420339a-abb2-4e8b-a193-04c8cdf4591e, "DataSharing": "Full", "DataContainer": "Model", "_overwrittenUpdatable": None, "Template": $$d8875450-9102-4ac3-b5b1-2e892936bef5, "InSystem": $$f608f44a-b1de-463d-9489-dd79d6c4482e, "MasterSources": None, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup 1" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup 1</object-name>
+        <member-data valType="String">{"DisplayText": "Configuration", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 1", "_overwrittenUpdatable": None, "Template": $$e475adbe-cafc-4790-8475-9d0f40828aef, "InSystem": $$f608f44a-b1de-463d-9489-dd79d6c4482e, "MasterSources": {"Sources": [[{"DataType": "AqwaModel", "Component": $$6a7d580a-0cd7-4615-aed9-3db615d9f494, "Transfer": None}], [{"DataType": "AqwaSolution", "Component": $$fc0f6da8-c1ff-4cc4-9a4b-6851169a0926, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "Aqwa", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution 1" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution 1</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 1", "_overwrittenUpdatable": None, "Template": $$8eb8a369-dc22-4a11-a17e-4aa4efe08fa9, "InSystem": $$f608f44a-b1de-463d-9489-dd79d6c4482e, "MasterSources": {"Sources": [[{"DataType": "AqwaSetup", "Component": $$64c3a4f7-1b57-4300-8dc7-d589d9ab56f8, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "Aqwa", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Results 1" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Results 1</object-name>
+        <member-data valType="String">{"DisplayText": "Résultats", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results 1", "_overwrittenUpdatable": None, "Template": $$41894350-9c4a-47ca-95dc-eda2c5b1add0, "InSystem": $$f608f44a-b1de-463d-9489-dd79d6c4482e, "MasterSources": {"Sources": [[{"DataType": "AqwaSolution", "Component": $$9040d00c-3ee7-4122-b317-f7122ee9d523, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "Aqwa", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="ReportDataContainer" Version="1.0">
+      <container-type valType="String">Ansys.ProjectReporting.Addin:ReportDataContainer</container-type>
+      <static-id valType="String">ReportDataContainer</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1800, "Input": 1791, "Output": 1791}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+    </Container>
+    <Container Name="Graphics" Version="1.0">
+      <container-type valType="String">Ansys.Graphics.GraphicsAddin:graphics</container-type>
+      <static-id valType="String">Graphics</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1801, "Input": 1801, "Output": 1801}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+    </Container>
+    <Container Name="Units" Version="1.0">
+      <container-type valType="String">Ansys.Units.Commands.Addin:Units</container-type>
+      <static-id valType="String">Units</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1802, "Input": 1940, "Output": 1802}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Units/UnitSystemProjectSettings:UnitSystemProjectSettings" Version="1.0">
+        <class-type valType="String">UnitSystemProjectSettings</class-type>
+        <object-name valType="String">UnitSystemProjectSettings</object-name>
+        <member-data valType="String">{"DisplayText": "UnitSystemProjectSettings", "DataContainerUnitSystemRegistry": {"Geometry": "DesignModelerUnitSystem_m"}}</member-data>
+      </Object>
+      <Object Name="/Units/UnitSystem:UnitSys" Version="1.0">
+        <class-type valType="String">UnitSystem</class-type>
+        <object-name valType="String">UnitSys</object-name>
+        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
+      </Object>
+      <Object Name="/Units/UnitSystem:UnitSys 1" Version="1.0">
+        <class-type valType="String">UnitSystem</class-type>
+        <object-name valType="String">UnitSys 1</object-name>
+        <member-data valType="String">{"DisplayText": "DesignModeler Unit System (m, degree)", "ChangedQuantityUnits": {"Angle": "degree", "Temperature": "C", "Density Derivative wrt Temperature": "kg m^-3 C^-1", "Energy Source Coefficient": "W m^-3 C^-1", "Heat Transfer Coefficient": "W m^-2 C^-1", "Inverse Angle": "degree^-1", "Molar Entropy": "J mol^-1 C^-1", "Piezoelectric Strain Coefficient": "A s N^-1", "Piezoelectric Stress Coefficient": "A s m^-2", "Pressure Derivative wrt Temperature": "Pa C^-1", "Seebeck Coefficient": "V C^-1", "Specific Entropy": "J kg^-1 C^-1", "Specific Heat Capacity": "J kg^-1 C^-1", "Stress Per Temperature": "Pa C^-1", "Temperature Difference": "C", "Temperature Gradient": "C m^-1", "InvTemp1": "C^-1", "InvTemp2": "C^-2", "InvTemp3": "C^-3", "InvTemp4": "C^-4", "Thermal Capacitance": "J C^-1", "Thermal Compliance": "W C", "Thermal Conductance": "W C^-1", "Thermal Conductivity": "W m^-1 C^-1", "Thermal Contact Resistance": "W^-1 m^2 C", "Thermal Expansivity": "C^-1"}, "UnitSystemName": "DesignModelerUnitSystem_m", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": False, "IsDefault": False}</member-data>
+      </Object>
+    </Container>
+    <Container Name="RepContainer" Version="1.0">
+      <container-type valType="String">Ansys.Rep.RepAddin:RepContainer</container-type>
+      <static-id valType="String">RepContainer</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3229, "Input": 1805, "Output": 1805}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/RepContainer/RepSettings:Rep Settings Entity" Version="1.0">
+        <class-type valType="String">RepSettings</class-type>
+        <object-name valType="String">Rep Settings Entity</object-name>
+        <member-data valType="String">{"DisplayText": "Rep Settings Entity", "ServerUrl": "https://localhost:8443/hps", "ServerUserName": None, "ServerPassword": None, "ProjectId": None, "ExecutionTime": 300, "UpdateDesignPointInSteps": False}</member-data>
+      </Object>
+      <Object Name="/RepContainer/RepProjectIDMap:REP ProjectID Map Entity" Version="1.0">
+        <class-type valType="String">RepProjectIDMap</class-type>
+        <object-name valType="String">REP ProjectID Map Entity</object-name>
+        <member-data valType="String">{"DisplayText": "REP ProjectID Map Entity", "RepProjectIDMap": {}}</member-data>
+      </Object>
+      <Object Name="/RepContainer/ConnectionInfo:ConnectionInfo" Version="1.0">
+        <class-type valType="String">ConnectionInfo</class-type>
+        <object-name valType="String">ConnectionInfo</object-name>
+        <member-data valType="String">{"DisplayText": "ConnectionInfo", "IsConnected": False, "ProjectId": None, "LastSyncStateId": "00000000-0000-0000-0000-000000000000", "ConnectionSettingsModified": False, "DesignPointsBeingEvaluated": [], "ParameterToRepId": {}, "DpReferenceToRepDatabaseId": {}, "ProjectUpdateRepId": None}</member-data>
+      </Object>
+    </Container>
+  </Containers>
+</Storage>

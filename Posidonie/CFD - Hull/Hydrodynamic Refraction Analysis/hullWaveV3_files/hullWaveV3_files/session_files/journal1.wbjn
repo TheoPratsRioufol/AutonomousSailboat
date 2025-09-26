@@ -1,0 +1,91 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+template1 = GetTemplate(
+    TemplateName="Hydrodynamic Diffraction",
+    Solver="AQWA")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+Save(Overwrite=True)
+string1 = geometry1.GetGeometryFileAndSaveData()
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Refresh()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+template2 = GetTemplate(TemplateName="Mesh")
+system2 = template2.CreateSystem(
+    Position="Left",
+    RelativeTo=system1)
+template3 = GetTemplate(TemplateName="Geometry")
+system3 = template3.CreateSystem(
+    Position="Left",
+    RelativeTo=system2)
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent2.ReplaceWithShare(
+    TargetSystem=system3,
+    ComponentToShare=geometryComponent1,
+    SourceSystem=system1)
+geometryComponent3 = system2.GetComponent(Name="Geometry")
+geometryComponent3.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+geometry1.Exit()
+system1.Delete()
+meshComponent1 = system2.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system2.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+Save(Overwrite=True)
+mesh1.Exit()
+geometry1.Edit()
+Save(Overwrite=True)
+geometry1.Exit()
+meshComponent1.Refresh()
+mesh1.Edit()
+Save(Overwrite=True)
+mesh1.Exit()
+system4 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+Save(Overwrite=True)
+modelComponent2 = system4.GetComponent(Name="Model")
+meshComponent1.TransferData(TargetComponent=modelComponent2)
+string2 = geometry1.GetGeometryFileAndSaveData()
+meshComponent1.Refresh()
+modelComponent2.Refresh()
+meshComponent1.Update(AllDependencies=True)
+mesh1.Edit()
+mesh1.Exit()
+string3 = geometry1.GetGeometryFileAndSaveData()
+meshComponent1.Refresh()
+modelComponent2.Refresh()
+model2 = system4.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)
+string4 = geometry1.GetGeometryFileAndSaveData()
+solution1 = system4.GetContainer(ComponentName="Solution")
+solution1.Edit()
+Save(Overwrite=True)
+template4 = GetTemplate(
+    TemplateName="Hydrodynamic Response",
+    Solver="AQWA")
+solutionComponent1 = system4.GetComponent(Name="Solution")
+componentTemplate1 = GetComponentTemplate(Name="AQWASetupTHCellTemplate")
+system5 = template4.CreateSystem(
+    ComponentsToShare=[modelComponent2],
+    DataTransferFrom=[Set(FromComponent=solutionComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    Position="Right",
+    RelativeTo=system4)
+string5 = geometry1.GetGeometryFileAndSaveData()
+setupComponent1 = system5.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+setup1 = system5.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
